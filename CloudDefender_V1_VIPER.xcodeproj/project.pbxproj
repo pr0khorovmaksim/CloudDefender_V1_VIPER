@@ -7,15 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A77F51425C0A89AC5D54F56 /* Pods_CloudDefender_V1_VIPER.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30B40F052CEB28028BBD9012 /* Pods_CloudDefender_V1_VIPER.framework */; };
+		31B3FDFE0EC7985530C9C766 /* Pods_CloudDefender_V1_VIPERUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B3A5FDD4E36AA0BF82A6899 /* Pods_CloudDefender_V1_VIPERUITests.framework */; };
+		B51564B224EB084A0056021D /* HomeAccessLevelAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51564B124EB084A0056021D /* HomeAccessLevelAlertController.swift */; };
+		B51564B424EB2CF40056021D /* HomeViewPickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51564B324EB2CF40056021D /* HomeViewPickerController.swift */; };
+		B558BD6624DEAA3200AA4626 /* CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B558BD6524DEAA3200AA4626 /* CoreData.swift */; };
+		B558BDA424EAF75100AA4626 /* HomeViewAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = B558BDA324EAF75100AA4626 /* HomeViewAlerts.swift */; };
 		B568A82124D4148A00A4BA6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568A82024D4148A00A4BA6C /* AppDelegate.swift */; };
 		B568A82324D4148A00A4BA6C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568A82224D4148A00A4BA6C /* SceneDelegate.swift */; };
-		B568A82524D4148A00A4BA6C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568A82424D4148A00A4BA6C /* ViewController.swift */; };
+		B568A82524D4148A00A4BA6C /* SignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568A82424D4148A00A4BA6C /* SignViewController.swift */; };
 		B568A82824D4148A00A4BA6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B568A82624D4148A00A4BA6C /* Main.storyboard */; };
 		B568A82B24D4148A00A4BA6C /* CloudDefender_V1_VIPER.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B568A82924D4148A00A4BA6C /* CloudDefender_V1_VIPER.xcdatamodeld */; };
 		B568A82D24D4148C00A4BA6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B568A82C24D4148C00A4BA6C /* Assets.xcassets */; };
 		B568A83024D4148C00A4BA6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B568A82E24D4148C00A4BA6C /* LaunchScreen.storyboard */; };
 		B568A83B24D4148C00A4BA6C /* CloudDefender_V1_VIPERTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568A83A24D4148C00A4BA6C /* CloudDefender_V1_VIPERTests.swift */; };
 		B568A84624D4148C00A4BA6C /* CloudDefender_V1_VIPERUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568A84524D4148C00A4BA6C /* CloudDefender_V1_VIPERUITests.swift */; };
+		B568A86024D4159200A4BA6C /* SignPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568A85F24D4159200A4BA6C /* SignPresenter.swift */; };
+		B568A86224D415A000A4BA6C /* SignRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568A86124D415A000A4BA6C /* SignRouter.swift */; };
+		B568A86424D415B000A4BA6C /* SignInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568A86324D415B000A4BA6C /* SignInteractor.swift */; };
+		B568A86624D415B800A4BA6C /* SignEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568A86524D415B800A4BA6C /* SignEntity.swift */; };
+		B568A86824D415C400A4BA6C /* SignProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568A86724D415C400A4BA6C /* SignProtocols.swift */; };
+		B568A87224D4169100A4BA6C /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568A87124D4169100A4BA6C /* HomePresenter.swift */; };
+		B568A87424D4169B00A4BA6C /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568A87324D4169B00A4BA6C /* HomeRouter.swift */; };
+		B568A87624D416AA00A4BA6C /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568A87524D416AA00A4BA6C /* HomeInteractor.swift */; };
+		B568A87824D416B400A4BA6C /* HomeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568A87724D416B400A4BA6C /* HomeEntity.swift */; };
+		B568A87A24D416BF00A4BA6C /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568A87924D416BF00A4BA6C /* HomeProtocols.swift */; };
+		B568A87C24D460A400A4BA6C /* HomeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568A87B24D460A400A4BA6C /* HomeCollectionViewController.swift */; };
+		B568A88824D591A100A4BA6C /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568A88724D591A100A4BA6C /* NetworkService.swift */; };
+		B568A88A24D591C500A4BA6C /* NetworkDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568A88924D591C500A4BA6C /* NetworkDataFetcher.swift */; };
+		B568A88C24D59B9200A4BA6C /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568A88B24D59B9200A4BA6C /* HomeCollectionViewCell.swift */; };
+		B568A89224D5DB7000A4BA6C /* HomeCollectionViewCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568A89124D5DB7000A4BA6C /* HomeCollectionViewCell2.swift */; };
+		B5787EDB24F3CFA400C7C335 /* FileProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5787EDA24F3CFA400C7C335 /* FileProtocols.swift */; };
+		B5787EDD24F3CFB400C7C335 /* FileEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5787EDC24F3CFB400C7C335 /* FileEntity.swift */; };
+		B5787EDF24F3CFC600C7C335 /* FileInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5787EDE24F3CFC600C7C335 /* FileInteractor.swift */; };
+		B5787EE224F3CFD700C7C335 /* FileRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5787EE124F3CFD700C7C335 /* FileRouter.swift */; };
+		B5787EE424F3CFE100C7C335 /* FilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5787EE324F3CFE100C7C335 /* FilePresenter.swift */; };
+		B5787EE624F3D00A00C7C335 /* FileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5787EE524F3D00A00C7C335 /* FileViewController.swift */; };
+		B5B89E1624F1609400BCE104 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B89E1524F1609400BCE104 /* Reachability.swift */; };
+		D7A9CAD354F84A2363DAE2DF /* Pods_CloudDefender_V1_VIPERTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EFA8B4FB761E6DC1030521A /* Pods_CloudDefender_V1_VIPERTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +65,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B3A5FDD4E36AA0BF82A6899 /* Pods_CloudDefender_V1_VIPERUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CloudDefender_V1_VIPERUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		30B40F052CEB28028BBD9012 /* Pods_CloudDefender_V1_VIPER.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CloudDefender_V1_VIPER.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EFA8B4FB761E6DC1030521A /* Pods_CloudDefender_V1_VIPERTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CloudDefender_V1_VIPERTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FC0D51B5C6CDB7919972F0F /* Pods-CloudDefender_V1_VIPERUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudDefender_V1_VIPERUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CloudDefender_V1_VIPERUITests/Pods-CloudDefender_V1_VIPERUITests.release.xcconfig"; sourceTree = "<group>"; };
+		405604ED58EF8FBFB3D36941 /* Pods-CloudDefender_V1_VIPERTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudDefender_V1_VIPERTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CloudDefender_V1_VIPERTests/Pods-CloudDefender_V1_VIPERTests.release.xcconfig"; sourceTree = "<group>"; };
+		57242BCBA56290606464BE83 /* Pods-CloudDefender_V1_VIPER.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudDefender_V1_VIPER.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CloudDefender_V1_VIPER/Pods-CloudDefender_V1_VIPER.debug.xcconfig"; sourceTree = "<group>"; };
+		A065DA9D5AEBDA0EB091F772 /* Pods-CloudDefender_V1_VIPERUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudDefender_V1_VIPERUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CloudDefender_V1_VIPERUITests/Pods-CloudDefender_V1_VIPERUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B51564B124EB084A0056021D /* HomeAccessLevelAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAccessLevelAlertController.swift; sourceTree = "<group>"; };
+		B51564B324EB2CF40056021D /* HomeViewPickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewPickerController.swift; sourceTree = "<group>"; };
+		B558BD6524DEAA3200AA4626 /* CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreData.swift; sourceTree = "<group>"; };
+		B558BDA324EAF75100AA4626 /* HomeViewAlerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewAlerts.swift; sourceTree = "<group>"; };
 		B568A81D24D4148A00A4BA6C /* CloudDefender_V1_VIPER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudDefender_V1_VIPER.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B568A82024D4148A00A4BA6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B568A82224D4148A00A4BA6C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B568A82424D4148A00A4BA6C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B568A82424D4148A00A4BA6C /* SignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignViewController.swift; sourceTree = "<group>"; };
 		B568A82724D4148A00A4BA6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B568A82A24D4148A00A4BA6C /* CloudDefender_V1_VIPER.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CloudDefender_V1_VIPER.xcdatamodel; sourceTree = "<group>"; };
 		B568A82C24D4148C00A4BA6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +91,30 @@
 		B568A84124D4148C00A4BA6C /* CloudDefender_V1_VIPERUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CloudDefender_V1_VIPERUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B568A84524D4148C00A4BA6C /* CloudDefender_V1_VIPERUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudDefender_V1_VIPERUITests.swift; sourceTree = "<group>"; };
 		B568A84724D4148C00A4BA6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B568A85F24D4159200A4BA6C /* SignPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignPresenter.swift; sourceTree = "<group>"; };
+		B568A86124D415A000A4BA6C /* SignRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignRouter.swift; sourceTree = "<group>"; };
+		B568A86324D415B000A4BA6C /* SignInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInteractor.swift; sourceTree = "<group>"; };
+		B568A86524D415B800A4BA6C /* SignEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignEntity.swift; sourceTree = "<group>"; };
+		B568A86724D415C400A4BA6C /* SignProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignProtocols.swift; sourceTree = "<group>"; };
+		B568A87124D4169100A4BA6C /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		B568A87324D4169B00A4BA6C /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		B568A87524D416AA00A4BA6C /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		B568A87724D416B400A4BA6C /* HomeEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEntity.swift; sourceTree = "<group>"; };
+		B568A87924D416BF00A4BA6C /* HomeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
+		B568A87B24D460A400A4BA6C /* HomeCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewController.swift; sourceTree = "<group>"; };
+		B568A88724D591A100A4BA6C /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		B568A88924D591C500A4BA6C /* NetworkDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetcher.swift; sourceTree = "<group>"; };
+		B568A88B24D59B9200A4BA6C /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		B568A89124D5DB7000A4BA6C /* HomeCollectionViewCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell2.swift; sourceTree = "<group>"; };
+		B5787EDA24F3CFA400C7C335 /* FileProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileProtocols.swift; sourceTree = "<group>"; };
+		B5787EDC24F3CFB400C7C335 /* FileEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileEntity.swift; sourceTree = "<group>"; };
+		B5787EDE24F3CFC600C7C335 /* FileInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileInteractor.swift; sourceTree = "<group>"; };
+		B5787EE124F3CFD700C7C335 /* FileRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileRouter.swift; sourceTree = "<group>"; };
+		B5787EE324F3CFE100C7C335 /* FilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilePresenter.swift; sourceTree = "<group>"; };
+		B5787EE524F3D00A00C7C335 /* FileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileViewController.swift; sourceTree = "<group>"; };
+		B5B89E1524F1609400BCE104 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		E915041053C236DB89218854 /* Pods-CloudDefender_V1_VIPERTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudDefender_V1_VIPERTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CloudDefender_V1_VIPERTests/Pods-CloudDefender_V1_VIPERTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FB5ABACE2451F76F15584119 /* Pods-CloudDefender_V1_VIPER.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudDefender_V1_VIPER.release.xcconfig"; path = "Pods/Target Support Files/Pods-CloudDefender_V1_VIPER/Pods-CloudDefender_V1_VIPER.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A77F51425C0A89AC5D54F56 /* Pods_CloudDefender_V1_VIPER.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +130,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7A9CAD354F84A2363DAE2DF /* Pods_CloudDefender_V1_VIPERTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +138,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31B3FDFE0EC7985530C9C766 /* Pods_CloudDefender_V1_VIPERUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		613A5B0A30C7038183684A1A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				30B40F052CEB28028BBD9012 /* Pods_CloudDefender_V1_VIPER.framework */,
+				3EFA8B4FB761E6DC1030521A /* Pods_CloudDefender_V1_VIPERTests.framework */,
+				1B3A5FDD4E36AA0BF82A6899 /* Pods_CloudDefender_V1_VIPERUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B568A81424D4148A00A4BA6C = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +162,8 @@
 				B568A83924D4148C00A4BA6C /* CloudDefender_V1_VIPERTests */,
 				B568A84424D4148C00A4BA6C /* CloudDefender_V1_VIPERUITests */,
 				B568A81E24D4148A00A4BA6C /* Products */,
+				E0959055149E45F2E074C0F4 /* Pods */,
+				613A5B0A30C7038183684A1A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,12 +180,12 @@
 		B568A81F24D4148A00A4BA6C /* CloudDefender_V1_VIPER */ = {
 			isa = PBXGroup;
 			children = (
-				B568A82024D4148A00A4BA6C /* AppDelegate.swift */,
-				B568A82224D4148A00A4BA6C /* SceneDelegate.swift */,
-				B568A82424D4148A00A4BA6C /* ViewController.swift */,
-				B568A82624D4148A00A4BA6C /* Main.storyboard */,
-				B568A82C24D4148C00A4BA6C /* Assets.xcassets */,
-				B568A82E24D4148C00A4BA6C /* LaunchScreen.storyboard */,
+				B568A85324D414B600A4BA6C /* app_settings */,
+				B568A85424D414C400A4BA6C /* app_modules */,
+				B568A87D24D4626900A4BA6C /* app_api */,
+				B568A88424D4B1AA00A4BA6C /* app_view_helper */,
+				B568A85624D414E600A4BA6C /* app_icons */,
+				B568A85524D414D800A4BA6C /* app_ui */,
 				B568A83124D4148C00A4BA6C /* Info.plist */,
 				B568A82924D4148A00A4BA6C /* CloudDefender_V1_VIPER.xcdatamodeld */,
 			);
@@ -131,6 +210,261 @@
 			path = CloudDefender_V1_VIPERUITests;
 			sourceTree = "<group>";
 		};
+		B568A85324D414B600A4BA6C /* app_settings */ = {
+			isa = PBXGroup;
+			children = (
+				B568A82024D4148A00A4BA6C /* AppDelegate.swift */,
+				B568A82224D4148A00A4BA6C /* SceneDelegate.swift */,
+			);
+			path = app_settings;
+			sourceTree = "<group>";
+		};
+		B568A85424D414C400A4BA6C /* app_modules */ = {
+			isa = PBXGroup;
+			children = (
+				B568A85724D414FB00A4BA6C /* sign_module */,
+				B568A85E24D4155800A4BA6C /* home_module */,
+				B5787ED324F3CF4600C7C335 /* file_module */,
+			);
+			path = app_modules;
+			sourceTree = "<group>";
+		};
+		B568A85524D414D800A4BA6C /* app_ui */ = {
+			isa = PBXGroup;
+			children = (
+				B568A82624D4148A00A4BA6C /* Main.storyboard */,
+				B568A82E24D4148C00A4BA6C /* LaunchScreen.storyboard */,
+			);
+			path = app_ui;
+			sourceTree = "<group>";
+		};
+		B568A85624D414E600A4BA6C /* app_icons */ = {
+			isa = PBXGroup;
+			children = (
+				B568A82C24D4148C00A4BA6C /* Assets.xcassets */,
+			);
+			path = app_icons;
+			sourceTree = "<group>";
+		};
+		B568A85724D414FB00A4BA6C /* sign_module */ = {
+			isa = PBXGroup;
+			children = (
+				B568A85D24D4154800A4BA6C /* protocols */,
+				B568A85C24D4154000A4BA6C /* entity */,
+				B568A85B24D4153800A4BA6C /* interactor */,
+				B568A85A24D4152F00A4BA6C /* router */,
+				B568A85924D4152400A4BA6C /* presenter */,
+				B568A85824D4151700A4BA6C /* view */,
+			);
+			path = sign_module;
+			sourceTree = "<group>";
+		};
+		B568A85824D4151700A4BA6C /* view */ = {
+			isa = PBXGroup;
+			children = (
+				B568A82424D4148A00A4BA6C /* SignViewController.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		B568A85924D4152400A4BA6C /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B568A85F24D4159200A4BA6C /* SignPresenter.swift */,
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		B568A85A24D4152F00A4BA6C /* router */ = {
+			isa = PBXGroup;
+			children = (
+				B568A86124D415A000A4BA6C /* SignRouter.swift */,
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+		B568A85B24D4153800A4BA6C /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+				B568A86324D415B000A4BA6C /* SignInteractor.swift */,
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
+		B568A85C24D4154000A4BA6C /* entity */ = {
+			isa = PBXGroup;
+			children = (
+				B568A86524D415B800A4BA6C /* SignEntity.swift */,
+			);
+			path = entity;
+			sourceTree = "<group>";
+		};
+		B568A85D24D4154800A4BA6C /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				B568A86724D415C400A4BA6C /* SignProtocols.swift */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		B568A85E24D4155800A4BA6C /* home_module */ = {
+			isa = PBXGroup;
+			children = (
+				B568A86E24D415F700A4BA6C /* protocols */,
+				B568A86D24D415EB00A4BA6C /* entity */,
+				B568A86C24D415E500A4BA6C /* interactor */,
+				B568A86B24D415DF00A4BA6C /* router */,
+				B568A86A24D415D700A4BA6C /* presenter */,
+				B568A86924D415D300A4BA6C /* view */,
+			);
+			path = home_module;
+			sourceTree = "<group>";
+		};
+		B568A86924D415D300A4BA6C /* view */ = {
+			isa = PBXGroup;
+			children = (
+				B568A87B24D460A400A4BA6C /* HomeCollectionViewController.swift */,
+				B568A88B24D59B9200A4BA6C /* HomeCollectionViewCell.swift */,
+				B568A89124D5DB7000A4BA6C /* HomeCollectionViewCell2.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		B568A86A24D415D700A4BA6C /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B568A87124D4169100A4BA6C /* HomePresenter.swift */,
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		B568A86B24D415DF00A4BA6C /* router */ = {
+			isa = PBXGroup;
+			children = (
+				B568A87324D4169B00A4BA6C /* HomeRouter.swift */,
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+		B568A86C24D415E500A4BA6C /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+				B568A87524D416AA00A4BA6C /* HomeInteractor.swift */,
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
+		B568A86D24D415EB00A4BA6C /* entity */ = {
+			isa = PBXGroup;
+			children = (
+				B568A87724D416B400A4BA6C /* HomeEntity.swift */,
+			);
+			path = entity;
+			sourceTree = "<group>";
+		};
+		B568A86E24D415F700A4BA6C /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				B568A87924D416BF00A4BA6C /* HomeProtocols.swift */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		B568A87D24D4626900A4BA6C /* app_api */ = {
+			isa = PBXGroup;
+			children = (
+				B568A88724D591A100A4BA6C /* NetworkService.swift */,
+				B568A88924D591C500A4BA6C /* NetworkDataFetcher.swift */,
+				B5B89E1524F1609400BCE104 /* Reachability.swift */,
+				B558BD6524DEAA3200AA4626 /* CoreData.swift */,
+			);
+			path = app_api;
+			sourceTree = "<group>";
+		};
+		B568A88424D4B1AA00A4BA6C /* app_view_helper */ = {
+			isa = PBXGroup;
+			children = (
+				B558BDA324EAF75100AA4626 /* HomeViewAlerts.swift */,
+				B51564B324EB2CF40056021D /* HomeViewPickerController.swift */,
+				B51564B124EB084A0056021D /* HomeAccessLevelAlertController.swift */,
+			);
+			path = app_view_helper;
+			sourceTree = "<group>";
+		};
+		B5787ED324F3CF4600C7C335 /* file_module */ = {
+			isa = PBXGroup;
+			children = (
+				B5787ED924F3CF8100C7C335 /* protocols */,
+				B5787ED824F3CF7C00C7C335 /* entity */,
+				B5787ED724F3CF7500C7C335 /* interactor */,
+				B5787ED624F3CF6D00C7C335 /* router */,
+				B5787ED524F3CF6600C7C335 /* presenter */,
+				B5787ED424F3CF5E00C7C335 /* view */,
+			);
+			path = file_module;
+			sourceTree = "<group>";
+		};
+		B5787ED424F3CF5E00C7C335 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				B5787EE524F3D00A00C7C335 /* FileViewController.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		B5787ED524F3CF6600C7C335 /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B5787EE324F3CFE100C7C335 /* FilePresenter.swift */,
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		B5787ED624F3CF6D00C7C335 /* router */ = {
+			isa = PBXGroup;
+			children = (
+				B5787EE124F3CFD700C7C335 /* FileRouter.swift */,
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+		B5787ED724F3CF7500C7C335 /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+				B5787EDE24F3CFC600C7C335 /* FileInteractor.swift */,
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
+		B5787ED824F3CF7C00C7C335 /* entity */ = {
+			isa = PBXGroup;
+			children = (
+				B5787EDC24F3CFB400C7C335 /* FileEntity.swift */,
+			);
+			path = entity;
+			sourceTree = "<group>";
+		};
+		B5787ED924F3CF8100C7C335 /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				B5787EDA24F3CFA400C7C335 /* FileProtocols.swift */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		E0959055149E45F2E074C0F4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				57242BCBA56290606464BE83 /* Pods-CloudDefender_V1_VIPER.debug.xcconfig */,
+				FB5ABACE2451F76F15584119 /* Pods-CloudDefender_V1_VIPER.release.xcconfig */,
+				E915041053C236DB89218854 /* Pods-CloudDefender_V1_VIPERTests.debug.xcconfig */,
+				405604ED58EF8FBFB3D36941 /* Pods-CloudDefender_V1_VIPERTests.release.xcconfig */,
+				A065DA9D5AEBDA0EB091F772 /* Pods-CloudDefender_V1_VIPERUITests.debug.xcconfig */,
+				3FC0D51B5C6CDB7919972F0F /* Pods-CloudDefender_V1_VIPERUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,9 +472,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B568A84A24D4148C00A4BA6C /* Build configuration list for PBXNativeTarget "CloudDefender_V1_VIPER" */;
 			buildPhases = (
+				DC5E4C1BFB1A5D6BA46AB0A8 /* [CP] Check Pods Manifest.lock */,
 				B568A81924D4148A00A4BA6C /* Sources */,
 				B568A81A24D4148A00A4BA6C /* Frameworks */,
 				B568A81B24D4148A00A4BA6C /* Resources */,
+				93E3A52C424BC03E9E6564C3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -155,6 +491,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B568A84D24D4148C00A4BA6C /* Build configuration list for PBXNativeTarget "CloudDefender_V1_VIPERTests" */;
 			buildPhases = (
+				E3CA2A93020A09D64199B240 /* [CP] Check Pods Manifest.lock */,
 				B568A83224D4148C00A4BA6C /* Sources */,
 				B568A83324D4148C00A4BA6C /* Frameworks */,
 				B568A83424D4148C00A4BA6C /* Resources */,
@@ -173,6 +510,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B568A85024D4148C00A4BA6C /* Build configuration list for PBXNativeTarget "CloudDefender_V1_VIPERUITests" */;
 			buildPhases = (
+				86DE70C041D99023C5F69B1E /* [CP] Check Pods Manifest.lock */,
 				B568A83D24D4148C00A4BA6C /* Sources */,
 				B568A83E24D4148C00A4BA6C /* Frameworks */,
 				B568A83F24D4148C00A4BA6C /* Resources */,
@@ -257,15 +595,116 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		86DE70C041D99023C5F69B1E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CloudDefender_V1_VIPERUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93E3A52C424BC03E9E6564C3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CloudDefender_V1_VIPER/Pods-CloudDefender_V1_VIPER-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/OAuthSwift/OAuthSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OAuthSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CloudDefender_V1_VIPER/Pods-CloudDefender_V1_VIPER-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC5E4C1BFB1A5D6BA46AB0A8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CloudDefender_V1_VIPER-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3CA2A93020A09D64199B240 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CloudDefender_V1_VIPERTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B568A81924D4148A00A4BA6C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B568A82524D4148A00A4BA6C /* ViewController.swift in Sources */,
+				B568A88A24D591C500A4BA6C /* NetworkDataFetcher.swift in Sources */,
+				B568A86024D4159200A4BA6C /* SignPresenter.swift in Sources */,
+				B568A87A24D416BF00A4BA6C /* HomeProtocols.swift in Sources */,
+				B558BD6624DEAA3200AA4626 /* CoreData.swift in Sources */,
+				B5787EDF24F3CFC600C7C335 /* FileInteractor.swift in Sources */,
+				B568A87424D4169B00A4BA6C /* HomeRouter.swift in Sources */,
+				B568A86624D415B800A4BA6C /* SignEntity.swift in Sources */,
+				B5787EE424F3CFE100C7C335 /* FilePresenter.swift in Sources */,
+				B558BDA424EAF75100AA4626 /* HomeViewAlerts.swift in Sources */,
+				B568A82524D4148A00A4BA6C /* SignViewController.swift in Sources */,
+				B5787EE624F3D00A00C7C335 /* FileViewController.swift in Sources */,
+				B568A87C24D460A400A4BA6C /* HomeCollectionViewController.swift in Sources */,
+				B5787EE224F3CFD700C7C335 /* FileRouter.swift in Sources */,
 				B568A82124D4148A00A4BA6C /* AppDelegate.swift in Sources */,
 				B568A82B24D4148A00A4BA6C /* CloudDefender_V1_VIPER.xcdatamodeld in Sources */,
+				B568A88824D591A100A4BA6C /* NetworkService.swift in Sources */,
+				B5B89E1624F1609400BCE104 /* Reachability.swift in Sources */,
+				B51564B224EB084A0056021D /* HomeAccessLevelAlertController.swift in Sources */,
+				B568A87624D416AA00A4BA6C /* HomeInteractor.swift in Sources */,
 				B568A82324D4148A00A4BA6C /* SceneDelegate.swift in Sources */,
+				B5787EDB24F3CFA400C7C335 /* FileProtocols.swift in Sources */,
+				B568A87824D416B400A4BA6C /* HomeEntity.swift in Sources */,
+				B568A88C24D59B9200A4BA6C /* HomeCollectionViewCell.swift in Sources */,
+				B568A86224D415A000A4BA6C /* SignRouter.swift in Sources */,
+				B568A86824D415C400A4BA6C /* SignProtocols.swift in Sources */,
+				B568A86424D415B000A4BA6C /* SignInteractor.swift in Sources */,
+				B568A89224D5DB7000A4BA6C /* HomeCollectionViewCell2.swift in Sources */,
+				B51564B424EB2CF40056021D /* HomeViewPickerController.swift in Sources */,
+				B5787EDD24F3CFB400C7C335 /* FileEntity.swift in Sources */,
+				B568A87224D4169100A4BA6C /* HomePresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +875,7 @@
 		};
 		B568A84B24D4148C00A4BA6C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57242BCBA56290606464BE83 /* Pods-CloudDefender_V1_VIPER.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -445,7 +885,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "maksim.CloudDefender-V1-VIPER";
+				PRODUCT_BUNDLE_IDENTIFIER = "maksim.test-oauth2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -454,6 +894,7 @@
 		};
 		B568A84C24D4148C00A4BA6C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB5ABACE2451F76F15584119 /* Pods-CloudDefender_V1_VIPER.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -463,7 +904,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "maksim.CloudDefender-V1-VIPER";
+				PRODUCT_BUNDLE_IDENTIFIER = "maksim.test-oauth2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -472,6 +913,7 @@
 		};
 		B568A84E24D4148C00A4BA6C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E915041053C236DB89218854 /* Pods-CloudDefender_V1_VIPERTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -494,6 +936,7 @@
 		};
 		B568A84F24D4148C00A4BA6C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 405604ED58EF8FBFB3D36941 /* Pods-CloudDefender_V1_VIPERTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -516,6 +959,7 @@
 		};
 		B568A85124D4148C00A4BA6C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A065DA9D5AEBDA0EB091F772 /* Pods-CloudDefender_V1_VIPERUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -536,6 +980,7 @@
 		};
 		B568A85224D4148C00A4BA6C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FC0D51B5C6CDB7919972F0F /* Pods-CloudDefender_V1_VIPERUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

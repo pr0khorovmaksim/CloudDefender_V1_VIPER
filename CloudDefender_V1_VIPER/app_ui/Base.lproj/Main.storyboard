@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sign View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="SignViewController" id="BYZ-38-t0r" customClass="SignViewController" customModule="CloudDefender_V1_VIPER" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K6I-Xj-9IK">
+                                <rect key="frame" x="185.5" y="438" width="43" height="30"/>
+                                <state key="normal" title="SignIn"/>
+                                <connections>
+                                    <action selector="signIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mjd-aE-f4D"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="K6I-Xj-9IK" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="09r-Sl-nVH"/>
+                            <constraint firstItem="K6I-Xj-9IK" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="pLa-Zg-VbZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <segue destination="qxa-Pr-NCg" kind="show" identifier="SignToHomeSegue" id="YFV-2B-9Xm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="130"/>
+        </scene>
+        <!--Home Collection View Controller-->
+        <scene sceneID="ddH-Qv-zde">
+            <objects>
+                <collectionViewController storyboardIdentifier="HomeCollectionViewController" id="vmk-9x-zas" customClass="HomeCollectionViewController" customModule="CloudDefender_V1_VIPER" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="nJy-4w-Vnb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="VCd-aH-rTr">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="estimatedItemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="5TK-pD-eod" customClass="HomeCollectionViewCell" customModule="CloudDefender_V1_VIPER" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="166" height="166"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="dzV-ix-Tbt">
+                                    <rect key="frame" x="0.0" y="0.0" width="166" height="166"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="folder name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5JP-OS-HlC" userLabel="Folder Name Label">
+                                            <rect key="frame" x="44.5" y="121" width="77" height="40"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="g9c-H0-lhY"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="folder_icon" translatesAutoresizingMaskIntoConstraints="NO" id="Mlh-xs-qot">
+                                            <rect key="frame" x="17" y="8" width="132" height="99.5"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Mlh-xs-qot" firstAttribute="top" secondItem="dzV-ix-Tbt" secondAttribute="top" constant="8" id="5TK-oO-mWg"/>
+                                        <constraint firstItem="Mlh-xs-qot" firstAttribute="leading" secondItem="dzV-ix-Tbt" secondAttribute="leading" constant="17" id="6Bq-SU-AC7"/>
+                                        <constraint firstItem="Mlh-xs-qot" firstAttribute="centerX" secondItem="dzV-ix-Tbt" secondAttribute="centerX" id="FUe-re-ljj"/>
+                                        <constraint firstItem="5JP-OS-HlC" firstAttribute="centerX" secondItem="dzV-ix-Tbt" secondAttribute="centerX" id="M81-Kp-hn6"/>
+                                        <constraint firstAttribute="bottom" secondItem="Mlh-xs-qot" secondAttribute="bottom" constant="53" id="bfU-sY-Ndg"/>
+                                        <constraint firstAttribute="bottom" secondItem="5JP-OS-HlC" secondAttribute="bottom" constant="5" id="tci-Kb-MMJ"/>
+                                        <constraint firstAttribute="trailing" secondItem="Mlh-xs-qot" secondAttribute="trailing" constant="17" id="tdk-Sd-aC4"/>
+                                        <constraint firstItem="Mlh-xs-qot" firstAttribute="width" relation="lessThanOrEqual" secondItem="dzV-ix-Tbt" secondAttribute="width" multiplier="0.8" id="vEn-i4-fHf"/>
+                                        <constraint firstItem="Mlh-xs-qot" firstAttribute="height" relation="lessThanOrEqual" secondItem="dzV-ix-Tbt" secondAttribute="height" multiplier="0.6" id="wg3-m9-aTg"/>
+                                    </constraints>
+                                </collectionViewCellContentView>
+                                <size key="customSize" width="166" height="166"/>
+                                <connections>
+                                    <outlet property="folderImage" destination="Mlh-xs-qot" id="c5K-qh-SnX"/>
+                                    <outlet property="folderNameLabel" destination="5JP-OS-HlC" id="MGZ-fc-x13"/>
+                                </connections>
+                            </collectionViewCell>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="Cell2" id="PSV-cy-hGx" customClass="HomeCollectionViewCell2" customModule="CloudDefender_V1_VIPER" customModuleProvider="target">
+                                <rect key="frame" x="248" y="0.0" width="166" height="166"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="e6I-UK-Zg0">
+                                    <rect key="frame" x="0.0" y="0.0" width="166" height="166"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="file_icon" translatesAutoresizingMaskIntoConstraints="NO" id="XtG-3V-D1p">
+                                            <rect key="frame" x="17" y="14" width="132" height="99"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="file name" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WrP-fT-fOJ">
+                                            <rect key="frame" x="53.5" y="121" width="59" height="40"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="b0t-5t-olo"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="WrP-fT-fOJ" firstAttribute="centerX" secondItem="e6I-UK-Zg0" secondAttribute="centerX" id="6s2-AQ-uZQ"/>
+                                        <constraint firstItem="XtG-3V-D1p" firstAttribute="height" relation="lessThanOrEqual" secondItem="e6I-UK-Zg0" secondAttribute="height" multiplier="0.6" id="8Ro-Kn-hHf"/>
+                                        <constraint firstItem="XtG-3V-D1p" firstAttribute="leading" secondItem="e6I-UK-Zg0" secondAttribute="leading" constant="17" id="ASz-Hc-91J"/>
+                                        <constraint firstItem="XtG-3V-D1p" firstAttribute="width" relation="lessThanOrEqual" secondItem="e6I-UK-Zg0" secondAttribute="width" multiplier="0.8" id="JRm-hM-XRd"/>
+                                        <constraint firstItem="XtG-3V-D1p" firstAttribute="centerX" secondItem="e6I-UK-Zg0" secondAttribute="centerX" id="R7O-mM-UOu"/>
+                                        <constraint firstAttribute="trailing" secondItem="XtG-3V-D1p" secondAttribute="trailing" constant="17" id="YgX-TF-dUw"/>
+                                        <constraint firstAttribute="bottom" secondItem="XtG-3V-D1p" secondAttribute="bottom" constant="53" id="jCC-bE-UH8"/>
+                                        <constraint firstItem="XtG-3V-D1p" firstAttribute="top" secondItem="e6I-UK-Zg0" secondAttribute="top" constant="14" id="uKg-Jt-Msm"/>
+                                        <constraint firstAttribute="bottom" secondItem="WrP-fT-fOJ" secondAttribute="bottom" constant="5" id="xMw-P6-vcK"/>
+                                    </constraints>
+                                </collectionViewCellContentView>
+                                <size key="customSize" width="166" height="166"/>
+                                <connections>
+                                    <outlet property="fileImage" destination="XtG-3V-D1p" id="p9S-Za-Y6e"/>
+                                    <outlet property="fileNameLabel" destination="WrP-fT-fOJ" id="jdn-vz-xZU"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="vmk-9x-zas" id="mkU-6i-2Tb"/>
+                            <outlet property="delegate" destination="vmk-9x-zas" id="Yea-CZ-OrI"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="J0q-wd-BiD">
+                        <barButtonItem key="leftBarButtonItem" id="p3e-Xq-bh1">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="DjF-WV-WEx">
+                                <rect key="frame" x="20" y="13" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="back:" destination="vmk-9x-zas" eventType="touchUpInside" id="Dq5-tf-jY4"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="add" id="gTY-xx-Lwq">
+                                <connections>
+                                    <action selector="userActionCloud:" destination="vmk-9x-zas" id="Sqm-mM-crn"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Exit" id="e0T-bh-eH8">
+                                <connections>
+                                    <action selector="settingsCloud:" destination="vmk-9x-zas" id="pfU-Dw-edW"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="addOutlet" destination="gTY-xx-Lwq" id="ux5-3p-CSr"/>
+                        <outlet property="backOutlet" destination="DjF-WV-WEx" id="j9v-gt-nxy"/>
+                        <outlet property="settingsOutlet" destination="e0T-bh-eH8" id="GfJ-Md-ODX"/>
+                        <segue destination="GEn-NF-CbQ" kind="show" identifier="HomeToFileSegue" id="qBl-Sc-lFr"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dhm-LD-pVD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1828.985507246377" y="129.91071428571428"/>
+        </scene>
+        <!--File View Controller-->
+        <scene sceneID="9cw-ao-2fo">
+            <objects>
+                <viewController storyboardIdentifier="FileViewController" id="GEn-NF-CbQ" customClass="FileViewController" customModule="CloudDefender_V1_VIPER" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QfZ-1Y-ZT7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="j64-sf-vMj"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="NzJ-wS-Pc6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z89-DN-SNt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2602.898550724638" y="121.875"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="2r6-eY-pPq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qxa-Pr-NCg" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="tOl-58-ufj"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YMM-9a-UOy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vmk-9x-zas" kind="relationship" relationship="rootViewController" id="v9E-6u-ggC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yxx-eB-MLc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="918.84057971014499" y="129.91071428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="file_icon" width="512" height="512"/>
+        <image name="folder_icon" width="512" height="512"/>
+    </resources>
+</document>
