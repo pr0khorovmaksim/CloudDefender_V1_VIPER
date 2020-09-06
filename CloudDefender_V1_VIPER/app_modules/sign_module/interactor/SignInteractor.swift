@@ -11,6 +11,7 @@ import UIKit
 import OAuthSwift
 
 final class SignInteractor : PresenterToSignInteractorProtocol{
+    
     var presenter: InteractorToSignPresenterProtocol?
     
     fileprivate var coreData : CoreData = CoreData()

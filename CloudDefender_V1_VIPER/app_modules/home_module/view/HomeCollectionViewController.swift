@@ -18,12 +18,12 @@ final class HomeCollectionViewController: UICollectionViewController {
     
     var foldersItem : Folder?
     
-    fileprivate var userId : String? = ""
+    fileprivate var userId : String?
     fileprivate var check : Bool? = false
     fileprivate var indexForLongPress : Int = 0
     var folderId : String? = UserDefaults.standard.stringArray(forKey: "lastFolderIdArray")?.last ?? "00000000-0000-0000-0000-000000000000"
-    var fileId : String = ""
-    var userName : String? = ""
+    var fileId : String?
+    var userName : String?
     
     @IBOutlet weak var backOutlet: UIButton!
     @IBOutlet weak var addOutlet: UIBarButtonItem!
@@ -87,15 +87,14 @@ final class HomeCollectionViewController: UICollectionViewController {
                 indexForLongPress = index.row
                 if indexPath?.section == 0{
                     let folderName = foldersItem?.folder.folders[indexForLongPress].folderName
-                    let folderId = foldersItem?.folder.folders[indexForLongPress].folderId
+                    folderId = foldersItem?.folder.folders[indexForLongPress].folderId
                     FolderLongPressed(folderName: "\(folderName!)", folderId: "\(folderId!)", folderIndex: indexForLongPress)
                     
                 }
                 if indexPath?.section == 1{
                     let fileName = foldersItem?.folder.files[indexForLongPress].fileName
-                    var fileId = foldersItem?.folder.files[indexForLongPress].fileId
-                    FileLongPressed(fileName: "\(fileName!)", fileId: "\(fileId!)", fileIndex: indexForLongPress)
                     fileId = foldersItem?.folder.files[indexForLongPress].fileId
+                    FileLongPressed(fileName: "\(fileName!)", fileId: "\(fileId!)", fileIndex: indexForLongPress)
                 }
             } else {
             }
@@ -170,16 +169,16 @@ final class HomeCollectionViewController: UICollectionViewController {
         }
         if indexPath.section == 1{
             let cell2 = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell2", for: indexPath) as! HomeCollectionViewCell2
-            let str = foldersItem?.folder.files[indexPath.row].fileName.lowercased()
+            let str = foldersItem?.folder.files[indexPath.row].fileName!.lowercased()
             let nsString = str! as NSString
             
             if nsString.length > 0
             {
                 cell2.fileNameLabel.text = nsString.substring(with: NSRange(location: 0, length: nsString.length > 30 ? 30 : nsString.length))
             }
-            if (foldersItem?.folder.files[indexPath.row].fileName.lowercased().contains("."))!{
+            if (foldersItem?.folder.files[indexPath.row].fileName!.lowercased().contains("."))!{
                 
-                switch foldersItem?.folder.files[indexPath.row].fileName.lowercased().components(separatedBy: ".")[1]{
+                switch foldersItem?.folder.files[indexPath.row].fileName!.lowercased().components(separatedBy: ".")[1]{
                     
                 case "png", "heic", "webp", "bmp", "gif", "jpe", "jpeg", "jpg", "svg", "tif", "tiff":
                     cell2.fileImage.image = UIImage(named: "file_image_icon")
@@ -232,18 +231,8 @@ extension HomeCollectionViewController : PresenterToHomeViewProtocol{
         if foldersItem?.folder.folderName == "root"{
             backOutlet.alpha = 0
         }
-        
         if  UserDefaults.standard.stringArray(forKey: "lastFolderIdArray")?.count != 0 && foldersItem?.folder.folderName != "root"{
             backOutlet.alpha = 1
-        }
-        
-        guard foldersItem!.folder.files.first != nil else { return }
-        if foldersItem!.folder.files.count == 1{
-            indexForLongPress = 0
-            fileId = foldersItem!.folder.files[indexForLongPress].fileId
-        }
-        if foldersItem!.folder.files.count < indexForLongPress{
-            indexForLongPress = 0
         }
     }
 }

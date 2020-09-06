@@ -15,18 +15,18 @@ final class Folder : Codable{
 
 final class FolderList : Codable {
     
-    var fullPath : String
-    var folderName : String
-    var folderId : String
+    let fullPath : String?
+    let folderName : String?
+    let folderId : String?
     var files : [Files]
     var folders : [Folders]
-    var owners : [String]
+    let owners : [String]
 }
 
 final class Files : Codable{
     
-    var fileId : String
-    var fileName : String
+    let fileId : String?
+    let fileName : String?
     
     init(fileId : String, fileName : String) {
         self.fileId = fileId
@@ -36,8 +36,8 @@ final class Files : Codable{
 
 final class Folders : Codable{
     
-    var folderId : String
-    var folderName : String
+    let folderId : String?
+    let folderName : String?
     
     init(folderId : String, folderName : String) {
         self.folderId = folderId

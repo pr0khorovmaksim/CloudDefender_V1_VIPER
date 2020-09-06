@@ -12,7 +12,7 @@ final class NetworkDataFetcher {
     
     fileprivate let networkService = NetworkService()
     
-    func fetchFolders(urlString: String, folderId : String, userId : String, httpMethod : String, parameters : [String : Any], response: @escaping (Folder?) -> Void) {
+    func fetchFolders(urlString: String, userId : String, httpMethod : String, parameters : [String : Any], response: @escaping (Folder?) -> Void) {
         networkService.request(urlString: urlString, userId : userId, httpMethod : httpMethod, parameters : parameters ) { (result) in
             switch result {
             case .success(let data):

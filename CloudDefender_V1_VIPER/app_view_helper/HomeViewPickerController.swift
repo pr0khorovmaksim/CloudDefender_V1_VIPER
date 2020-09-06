@@ -52,7 +52,7 @@ extension HomeCollectionViewController: UIImagePickerControllerDelegate, UINavig
             showActivityIndicatory()
         }
         if HomeCollectionViewController.operation == "updateFile"{
-            presenter?.updateFile(folderId: folderId!, fileId: fileId, updatedfile: imageData, fileName: HomeCollectionViewController.fileName!, fileType: HomeCollectionViewController.fileType!)
+            presenter?.updateFile(folderId: folderId!, fileId: fileId!, updatedfile: imageData, fileName: HomeCollectionViewController.fileName!, fileType: HomeCollectionViewController.fileType!)
             showActivityIndicatory()
         }
         self.dismiss(animated: true, completion: nil)
@@ -76,7 +76,7 @@ extension HomeCollectionViewController: UIImagePickerControllerDelegate, UINavig
                 showActivityIndicatory()
             }
             if HomeCollectionViewController.operation == "updateFile"{
-                presenter?.updateFile(folderId: folderId!, fileId: fileId, updatedfile: fileData, fileName: HomeCollectionViewController.fileName!, fileType: HomeCollectionViewController.fileType!)
+                presenter?.updateFile(folderId: folderId!, fileId: fileId!, updatedfile: fileData, fileName: HomeCollectionViewController.fileName!, fileType: HomeCollectionViewController.fileType!)
                 showActivityIndicatory()
             }
         }

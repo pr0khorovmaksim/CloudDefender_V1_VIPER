@@ -13,11 +13,11 @@ final class HomeAccessLevelAlertController: UIAlertController, UITableViewDataSo
     
     fileprivate var controller : UITableViewController
     
-    fileprivate var createValue  = false
-    fileprivate var readValue = false
-    fileprivate var deleteValue  = false
-    fileprivate var ownerValue  = false
-    fileprivate var SummLevel = 0
+    fileprivate var createValue : Bool? = false
+    fileprivate var readValue : Bool? = false
+    fileprivate var deleteValue : Bool?  = false
+    fileprivate var ownerValue : Bool?  = false
+    fileprivate var SummLevel  : Int? = 0
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         controller = UITableViewController(style: .plain)

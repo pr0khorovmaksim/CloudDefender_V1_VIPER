@@ -25,9 +25,7 @@ final class HomeInteractor : PresenterToHomeInteractorProtocol{
     func getFoldersRequest(folderId : String, direction : String, userId : String) {
         
         let url = "https://romansuvorov.ru/clouddefender/folders/\(folderId)"
-        let parameters : [String: Any] = [:]
-        
-        self.networkDataFetcher.fetchFolders(urlString: url , folderId : folderId, userId : userId, httpMethod: "GET", parameters: parameters) { (folderResponse) in
+        self.networkDataFetcher.fetchFolders(urlString: url, userId : userId, httpMethod: "GET", parameters: [:]) { (folderResponse) in
             guard let folderResponse = folderResponse else { return }
             self.folderResponse = folderResponse
             if direction == "forward"{
@@ -131,8 +129,7 @@ final class HomeInteractor : PresenterToHomeInteractorProtocol{
     func deleteFolderRequest(folderId : String, folderName : String) {
         
         let url = "https://romansuvorov.ru/clouddefender/folders/\(folderId)"
-        let parameters : [String: Any] = [:]
-        self.networkDataFetcher.fetch(urlString: url, userId: userId!, httpMethod: "DELETE", parameters : parameters)
+        self.networkDataFetcher.fetch(urlString: url, userId: userId!, httpMethod: "DELETE", parameters : [:])
         { (folderResponse) in
             guard folderResponse != nil else { return }
             let responseString = String(decoding: folderResponse!, as: UTF8.self)
@@ -291,7 +288,7 @@ final class HomeInteractor : PresenterToHomeInteractorProtocol{
         
         guard let folderResponse = folderResponse else { return }
         let folderId = folderResponse.folder.folders[folderIndex].folderId
-        getFoldersRequest(folderId: folderId, direction : "forward", userId: userId!)
+        getFoldersRequest(folderId: folderId!, direction : "forward", userId: userId!)
     }
     
     func checkingFileIndex(fileIndex: Int, navigationController : UINavigationController) {
@@ -320,10 +317,11 @@ final class HomeInteractor : PresenterToHomeInteractorProtocol{
         
         guard let folderResponse = folderResponse else { return "unknown"}
         let fileName = folderResponse.folder.files[folderIndex].fileName
-        return fileName
+        return fileName!
     }
     
     func checkMimeType(filetype : String) -> String{
+        
         let mimeTypeTest = "\(filetype)"
         switch mimeTypeTest {
         //image

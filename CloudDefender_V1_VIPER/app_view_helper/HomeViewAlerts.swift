@@ -12,7 +12,7 @@ import MobileCoreServices
 
 extension HomeCollectionViewController  {
     
-    static var operation : String? = ""
+    static var operation : String?
     
     func FolderLongPressed(folderName : String, folderId : String, folderIndex : Int){
         
