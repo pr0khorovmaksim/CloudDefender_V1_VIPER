@@ -10,11 +10,10 @@ import Foundation
 
 final class NetworkDataFetcher {
     
-    let networkService = NetworkService()
+    fileprivate let networkService = NetworkService()
     
     func fetchFolders(urlString: String, folderId : String, userId : String, httpMethod : String, parameters : [String : Any], response: @escaping (Folder?) -> Void) {
-        networkService.requestFolders(urlString: urlString, userId : userId, httpMethod : httpMethod, parameters : parameters ) { (result) in
-            
+        networkService.request(urlString: urlString, userId : userId, httpMethod : httpMethod, parameters : parameters ) { (result) in
             switch result {
             case .success(let data):
                 do {
@@ -31,20 +30,8 @@ final class NetworkDataFetcher {
         }
     }
     
-    func fetchFolderAction(urlString: String, folderId : String, userId : String, httpMethod : String, parameters : [String : Any], response: @escaping (Data?) -> Void) {
-        networkService.requestFolders(urlString: urlString, userId : userId, httpMethod : httpMethod, parameters : parameters ) { (result) in
-            switch result {
-            case .success(let data):
-                response(data)
-            case .failure(let error):
-                print("Ошибка при запросе данных: \(error.localizedDescription)")
-                response(nil)
-            }
-        }
-    }
-    
-    func fetchFile(urlString: String, userId : String, httpMethod : String, parameters : [String : Any], response: @escaping (Data?) -> Void) {
-        networkService.requestFile(urlString: urlString, userId: userId, httpMethod: httpMethod, parameters : parameters){ (result) in
+    func fetch(urlString: String, userId : String, httpMethod : String, parameters : [String : Any], response: @escaping (Data?) -> Void) {
+        networkService.request(urlString: urlString, userId: userId, httpMethod: httpMethod, parameters : parameters){ (result) in
             switch result {
             case .success(let data):
                 response(data)

@@ -10,7 +10,7 @@ import Foundation
 
 final class NetworkService {
     
-    func requestFolders(urlString: String, userId : String, httpMethod: String, parameters : [String : Any], completion: @escaping (Result<Data, Error>) -> Void) {
+    func request(urlString: String, userId : String, httpMethod: String, parameters : [String : Any], completion: @escaping (Result<Data, Error>) -> Void) {
         
         var request = URLRequest(url: URL(string: urlString)!)
         
@@ -27,28 +27,6 @@ final class NetworkService {
         }else{
             
         }
-        
-        URLSession.shared.dataTask(with: request) { (data, response, error) in
-            
-            DispatchQueue.main.async {
-                if let error = error {
-                    completion(.failure(error))
-                    return
-                }
-                guard let data = data else { return }
-                completion(.success(data))
-            }
-        }.resume()
-    }
-    
-    func requestFile(urlString: String, userId : String, httpMethod: String, parameters : [String : Any], completion: @escaping (Result<Data, Error>) -> Void) {
-        
-        var request = URLRequest(url: URL(string: urlString)!)
-        
-        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-        request.addValue("application/json", forHTTPHeaderField: "Accept")
-        request.setValue("\(userId)", forHTTPHeaderField: "userID")
-        request.httpMethod = httpMethod
         
         URLSession.shared.dataTask(with: request) { (data, response, error) in
             

@@ -35,8 +35,6 @@ final class HomeInteractor : PresenterToHomeInteractorProtocol{
                 } else {
                     self.lastFolderId.append((self.folderResponse?.folder.folderId)!)
                     self.lastFolderName.append((self.folderResponse?.folder.folderName)!)
-                    
-                    print("folderIdself.lastFolderId",self.lastFolderId)
                     if self.lastFolderId.count == 1 && self.lastFolderId.last != "00000000-0000-0000-0000-000000000000"{
                         
                     }else{
@@ -134,7 +132,7 @@ final class HomeInteractor : PresenterToHomeInteractorProtocol{
         
         let url = "https://romansuvorov.ru/clouddefender/folders/\(folderId)"
         let parameters : [String: Any] = [:]
-        self.networkDataFetcher.fetchFolderAction(urlString: url, folderId: folderId, userId: userId!, httpMethod: "DELETE", parameters : parameters)
+        self.networkDataFetcher.fetch(urlString: url, userId: userId!, httpMethod: "DELETE", parameters : parameters)
         { (folderResponse) in
             guard folderResponse != nil else { return }
             let responseString = String(decoding: folderResponse!, as: UTF8.self)
@@ -150,10 +148,7 @@ final class HomeInteractor : PresenterToHomeInteractorProtocol{
         
         let url = "https://romansuvorov.ru/clouddefender/folders/"
         let parameters : [String: Any] = [ "parentFolderId" : "\(folderId)", "newFolderName" : "\(newFolderName)"]
-        
-        print("folderId",folderId)
-        print("userId", userId!)
-        self.networkDataFetcher.fetchFolderAction(urlString: url, folderId: folderId, userId: userId!, httpMethod: "POST", parameters : parameters)
+        self.networkDataFetcher.fetch(urlString: url, userId: userId!, httpMethod: "POST", parameters : parameters)
         { (folderResponse) in
             guard folderResponse != nil else { return }
             let responseString = String(decoding: folderResponse!, as: UTF8.self)
@@ -172,7 +167,7 @@ final class HomeInteractor : PresenterToHomeInteractorProtocol{
         
         let url = "https://romansuvorov.ru/clouddefender/folders/"
         let parameters : [String: Any] = [ "folderId" : "\(folderId)", "userName" : "\(userName)", "email" : "\(userEmail)", "accessLevel" : accessLevel]
-        self.networkDataFetcher.fetchFolderAction(urlString: url, folderId: folderId, userId: userId!, httpMethod: "PATCH", parameters : parameters) { (folderResponse) in
+        self.networkDataFetcher.fetch(urlString: url, userId: userId!, httpMethod: "PATCH", parameters : parameters) { (folderResponse) in
             guard folderResponse != nil else { return }
             let responseString = String(decoding: folderResponse!, as: UTF8.self)
             if responseString == ""{
@@ -186,7 +181,7 @@ final class HomeInteractor : PresenterToHomeInteractorProtocol{
     func downloadFileRequest(fileId : String, fileName : String){
         let nameType = checkFileType(fileName : fileName).0
         let url = "https://romansuvorov.ru/clouddefender/files/\(fileId)"
-        self.networkDataFetcher.fetchFile(urlString: url, userId: userId!, httpMethod: "GET", parameters: [:]) { (file) in
+        self.networkDataFetcher.fetch(urlString: url, userId: userId!, httpMethod: "GET", parameters: [:]) { (file) in
             guard file != nil else {
                 let responseString = String(decoding: file!, as: UTF8.self)
                 self.presenter?.errorAlert(errorMessage: "Ошибка: \(responseString)")
@@ -213,7 +208,7 @@ final class HomeInteractor : PresenterToHomeInteractorProtocol{
     func deleteFileRequest(fileId : String, fileName : String){
         
         let url = "https://romansuvorov.ru/clouddefender/files/\(fileId)"
-        self.networkDataFetcher.fetchFile(urlString: url, userId: userId!, httpMethod: "DELETE", parameters: [:]) { (file) in
+        self.networkDataFetcher.fetch(urlString: url, userId: userId!, httpMethod: "DELETE", parameters: [:]) { (file) in
             guard file != nil else { return }
             let responseString = String(decoding: file!, as: UTF8.self)
             if responseString == ""{
@@ -305,7 +300,7 @@ final class HomeInteractor : PresenterToHomeInteractorProtocol{
         let fileId = folderResponse?.folder.files[fileIndex].fileId
         let url = "https://romansuvorov.ru/clouddefender/files/\(fileId!)"
         let fileType = checkFileType(fileName: fileName!).1
-        networkDataFetcher.fetchFile(urlString: url, userId: userId!, httpMethod: "GET", parameters: [:]) { (file) in
+        self.networkDataFetcher.fetch(urlString: url, userId: userId!, httpMethod: "GET", parameters: [:]) { (file) in
             guard file != nil else {
                 let responseString = String(decoding: file!, as: UTF8.self)
                 self.presenter?.errorAlert(errorMessage: "Ошибка: \(responseString)")
@@ -317,7 +312,6 @@ final class HomeInteractor : PresenterToHomeInteractorProtocol{
             }catch{
                 self.presenter?.errorAlert(errorMessage: "Ошибка при записи: \(error)")
             }
-            //checkFileType
             self.presenter?.goToFile(navigationController: navigationController, fileURL: pathURL, fileName: fileName!, fileType : fileType)
         }
     }
