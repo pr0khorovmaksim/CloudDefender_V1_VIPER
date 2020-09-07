@@ -1,0 +1,1020 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "7706909F-ECF4-441E-9199-B9D6D64A9D21"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B572D031-56C1-4060-95FC-A6F572586015"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CloudDefender_V1_VIPER/app_view/HomeViewPickerController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "imagePickerController(_:didFinishPickingMediaWithInfo:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "40635A04-C138-4D44-BC95-855E5AE9293E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CloudDefender_V1_VIPER/app_view/HomeViewPickerController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "imagePickerController(_:didFinishPickingMediaWithInfo:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6936D381-4505-4DCE-A89E-11042F739364"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CloudDefender_V1_VIPER/app_view/HomeViewPickerController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "documentPicker(_:didPickDocumentsAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "15B1E3CD-9048-49F3-91D3-1B56FA7DCF23"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CloudDefender_V1_VIPER/app_api/NetworkService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "requestFileUpload(urlString:userId:fileName:httpMethod:mime:data:parameters:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "652EB789-9007-4DE6-9B51-FC49E5E5F745"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CloudDefender_V1_VIPER/app_modules/home_module/interactor/HomeInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "getFoldersRequest(folderId:direction:userId:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "557BB9EC-76AC-4EC6-85DF-DD3F29A73D19"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CloudDefender_V1_VIPER/app_modules/home_module/interactor/HomeInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "getFoldersRequest(folderId:direction:userId:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "028F93F0-0928-42E4-9815-6E6C521C1B26"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CloudDefender_V1_VIPER/app_modules/home_module/interactor/HomeInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "249"
+            endingLineNumber = "249"
+            landmarkName = "updateFileRequest(folderId:fileId:updatedfile:fileName:fileType:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5529832E-61FF-4657-B716-DDD0D6ED4EB9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CloudDefender_V1_VIPER/app_modules/home_module/interactor/HomeInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "223"
+            endingLineNumber = "223"
+            landmarkName = "uploadFileRequest(folderId:file:fileName:fileType:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3F4B10DC-9935-4BB7-AA8F-4C1F5BD0BF11"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CloudDefender_V1_VIPER/app_modules/home_module/interactor/HomeInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "234"
+            endingLineNumber = "234"
+            landmarkName = "uploadFileRequest(folderId:file:fileName:fileType:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3F4B10DC-9935-4BB7-AA8F-4C1F5BD0BF11 - 9bd61ee747edcc5d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CloudDefender_V1_VIPER.HomeInteractor.uploadFileRequest(folderId: Swift.String, file: Foundation.Data, fileName: Swift.String, fileType: Swift.String) -&gt; ()"
+                  moduleName = "CloudDefender_V1_VIPER"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maksim/Documents/%D0%A3%D1%87%D0%B5%D0%B1%D0%B0/xcode-swift-test/CloudDefender_V1_VIPER/CloudDefender_V1_VIPER/app_modules/home_module/interactor/HomeInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "251"
+                  endingLineNumber = "251"
+                  offsetFromSymbolStart = "2270">
+               </Location>
+               <Location
+                  uuid = "3F4B10DC-9935-4BB7-AA8F-4C1F5BD0BF11 - 927eebf3d84953ab"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;) -&gt; () in CloudDefender_V1_VIPER.HomeInteractor.uploadFileRequest(folderId: Swift.String, file: Foundation.Data, fileName: Swift.String, fileType: Swift.String) -&gt; ()"
+                  moduleName = "CloudDefender_V1_VIPER"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maksim/Documents/%D0%A3%D1%87%D0%B5%D0%B1%D0%B0/xcode-swift-test/CloudDefender_V1_VIPER/CloudDefender_V1_VIPER/app_modules/home_module/interactor/HomeInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "252"
+                  endingLineNumber = "252"
+                  offsetFromSymbolStart = "390">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4A8A347C-185A-4F6D-8F5C-4D172FC15F49"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CloudDefender_V1_VIPER/app_modules/home_module/interactor/HomeInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "220"
+            endingLineNumber = "220"
+            landmarkName = "uploadFileRequest(folderId:file:fileName:fileType:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "538D029B-0150-4547-B978-7E1672E0B1D1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CloudDefender_V1_VIPER/app_modules/file_module/view/FileViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "openFile(fileType:fileURL:fileName:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "538D029B-0150-4547-B978-7E1672E0B1D1 - 8ce85df87734bc0f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CloudDefender_V1_VIPER.FileViewController.openFile(type: Swift.String, fileURL: Foundation.URL, fileName: Swift.String) -&gt; ()"
+                  moduleName = "CloudDefender_V1_VIPER"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maksim/Documents/%D0%A3%D1%87%D0%B5%D0%B1%D0%B0/xcode-swift-test/CloudDefender_V1_VIPER/CloudDefender_V1_VIPER/app_modules/file_module/view/FileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "6105">
+               </Location>
+               <Location
+                  uuid = "538D029B-0150-4547-B978-7E1672E0B1D1 - 8ce85df87734bc0f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CloudDefender_V1_VIPER.FileViewController.openFile(type: Swift.String, fileURL: Foundation.URL, fileName: Swift.String) -&gt; ()"
+                  moduleName = "CloudDefender_V1_VIPER"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maksim/Documents/%D0%A3%D1%87%D0%B5%D0%B1%D0%B0/xcode-swift-test/CloudDefender_V1_VIPER/CloudDefender_V1_VIPER/app_modules/file_module/view/FileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "6307">
+               </Location>
+               <Location
+                  uuid = "538D029B-0150-4547-B978-7E1672E0B1D1 - 8ce85df87734bc0f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CloudDefender_V1_VIPER.FileViewController.openFile(type: Swift.String, fileURL: Foundation.URL, fileName: Swift.String) -&gt; ()"
+                  moduleName = "CloudDefender_V1_VIPER"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maksim/Documents/%D0%A3%D1%87%D0%B5%D0%B1%D0%B0/xcode-swift-test/CloudDefender_V1_VIPER/CloudDefender_V1_VIPER/app_modules/file_module/view/FileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "6509">
+               </Location>
+               <Location
+                  uuid = "538D029B-0150-4547-B978-7E1672E0B1D1 - 8ce85df87734bc0f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CloudDefender_V1_VIPER.FileViewController.openFile(type: Swift.String, fileURL: Foundation.URL, fileName: Swift.String) -&gt; ()"
+                  moduleName = "CloudDefender_V1_VIPER"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maksim/Documents/%D0%A3%D1%87%D0%B5%D0%B1%D0%B0/xcode-swift-test/CloudDefender_V1_VIPER/CloudDefender_V1_VIPER/app_modules/file_module/view/FileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "6711">
+               </Location>
+               <Location
+                  uuid = "538D029B-0150-4547-B978-7E1672E0B1D1 - 8ce85df87734bc0f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CloudDefender_V1_VIPER.FileViewController.openFile(type: Swift.String, fileURL: Foundation.URL, fileName: Swift.String) -&gt; ()"
+                  moduleName = "CloudDefender_V1_VIPER"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maksim/Documents/%D0%A3%D1%87%D0%B5%D0%B1%D0%B0/xcode-swift-test/CloudDefender_V1_VIPER/CloudDefender_V1_VIPER/app_modules/file_module/view/FileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "6913">
+               </Location>
+               <Location
+                  uuid = "538D029B-0150-4547-B978-7E1672E0B1D1 - 8ce85df87734bc0f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CloudDefender_V1_VIPER.FileViewController.openFile(type: Swift.String, fileURL: Foundation.URL, fileName: Swift.String) -&gt; ()"
+                  moduleName = "CloudDefender_V1_VIPER"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maksim/Documents/%D0%A3%D1%87%D0%B5%D0%B1%D0%B0/xcode-swift-test/CloudDefender_V1_VIPER/CloudDefender_V1_VIPER/app_modules/file_module/view/FileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "7115">
+               </Location>
+               <Location
+                  uuid = "538D029B-0150-4547-B978-7E1672E0B1D1 - 8ce85df87734bc0f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CloudDefender_V1_VIPER.FileViewController.openFile(type: Swift.String, fileURL: Foundation.URL, fileName: Swift.String) -&gt; ()"
+                  moduleName = "CloudDefender_V1_VIPER"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maksim/Documents/%D0%A3%D1%87%D0%B5%D0%B1%D0%B0/xcode-swift-test/CloudDefender_V1_VIPER/CloudDefender_V1_VIPER/app_modules/file_module/view/FileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "7317">
+               </Location>
+               <Location
+                  uuid = "538D029B-0150-4547-B978-7E1672E0B1D1 - 8ce85df87734bc0f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CloudDefender_V1_VIPER.FileViewController.openFile(type: Swift.String, fileURL: Foundation.URL, fileName: Swift.String) -&gt; ()"
+                  moduleName = "CloudDefender_V1_VIPER"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maksim/Documents/%D0%A3%D1%87%D0%B5%D0%B1%D0%B0/xcode-swift-test/CloudDefender_V1_VIPER/CloudDefender_V1_VIPER/app_modules/file_module/view/FileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "7519">
+               </Location>
+               <Location
+                  uuid = "538D029B-0150-4547-B978-7E1672E0B1D1 - 8ce85df87734bc0f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CloudDefender_V1_VIPER.FileViewController.openFile(type: Swift.String, fileURL: Foundation.URL, fileName: Swift.String) -&gt; ()"
+                  moduleName = "CloudDefender_V1_VIPER"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maksim/Documents/%D0%A3%D1%87%D0%B5%D0%B1%D0%B0/xcode-swift-test/CloudDefender_V1_VIPER/CloudDefender_V1_VIPER/app_modules/file_module/view/FileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "7721">
+               </Location>
+               <Location
+                  uuid = "538D029B-0150-4547-B978-7E1672E0B1D1 - 8ce85df87734bc0f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CloudDefender_V1_VIPER.FileViewController.openFile(type: Swift.String, fileURL: Foundation.URL, fileName: Swift.String) -&gt; ()"
+                  moduleName = "CloudDefender_V1_VIPER"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maksim/Documents/%D0%A3%D1%87%D0%B5%D0%B1%D0%B0/xcode-swift-test/CloudDefender_V1_VIPER/CloudDefender_V1_VIPER/app_modules/file_module/view/FileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "7923">
+               </Location>
+               <Location
+                  uuid = "538D029B-0150-4547-B978-7E1672E0B1D1 - 8ce85df87734bc0f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CloudDefender_V1_VIPER.FileViewController.openFile(type: Swift.String, fileURL: Foundation.URL, fileName: Swift.String) -&gt; ()"
+                  moduleName = "CloudDefender_V1_VIPER"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maksim/Documents/%D0%A3%D1%87%D0%B5%D0%B1%D0%B0/xcode-swift-test/CloudDefender_V1_VIPER/CloudDefender_V1_VIPER/app_modules/file_module/view/FileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "8125">
+               </Location>
+               <Location
+                  uuid = "538D029B-0150-4547-B978-7E1672E0B1D1 - 8ce85df87734bc0f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CloudDefender_V1_VIPER.FileViewController.openFile(type: Swift.String, fileURL: Foundation.URL, fileName: Swift.String) -&gt; ()"
+                  moduleName = "CloudDefender_V1_VIPER"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maksim/Documents/%D0%A3%D1%87%D0%B5%D0%B1%D0%B0/xcode-swift-test/CloudDefender_V1_VIPER/CloudDefender_V1_VIPER/app_modules/file_module/view/FileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "8327">
+               </Location>
+               <Location
+                  uuid = "538D029B-0150-4547-B978-7E1672E0B1D1 - 8ce85df87734bc0f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CloudDefender_V1_VIPER.FileViewController.openFile(type: Swift.String, fileURL: Foundation.URL, fileName: Swift.String) -&gt; ()"
+                  moduleName = "CloudDefender_V1_VIPER"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maksim/Documents/%D0%A3%D1%87%D0%B5%D0%B1%D0%B0/xcode-swift-test/CloudDefender_V1_VIPER/CloudDefender_V1_VIPER/app_modules/file_module/view/FileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "8529">
+               </Location>
+               <Location
+                  uuid = "538D029B-0150-4547-B978-7E1672E0B1D1 - 8ce85df87734bc0f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CloudDefender_V1_VIPER.FileViewController.openFile(type: Swift.String, fileURL: Foundation.URL, fileName: Swift.String) -&gt; ()"
+                  moduleName = "CloudDefender_V1_VIPER"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maksim/Documents/%D0%A3%D1%87%D0%B5%D0%B1%D0%B0/xcode-swift-test/CloudDefender_V1_VIPER/CloudDefender_V1_VIPER/app_modules/file_module/view/FileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "8731">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E82A0221-4114-4C1E-8C2C-410EE3201745"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CloudDefender_V1_VIPER/app_modules/file_module/view/FileViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
+            landmarkName = "audio(fileURL:fileName:fileType:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "048104DE-03FD-4857-8308-B8310C2D30AB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CloudDefender_V1_VIPER/app_modules/file_module/view/FileViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "109"
+            endingLineNumber = "109"
+            landmarkName = "audio(fileURL:fileName:fileType:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "51E65B3B-38A3-4EE6-838C-35A517551344"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CloudDefender_V1_VIPER/app_api/NetworkDataFetcher.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "fetchUploadFile(urlString:userId:fileName:httpMethod:mime:data:parameters:response:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7B4A0354-9774-43DC-A205-3654A0D636FF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CloudDefender_V1_VIPER/app_modules/home_module/interactor/HomeInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "233"
+            endingLineNumber = "233"
+            landmarkName = "uploadFileRequest(folderId:file:fileName:fileType:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7B4A0354-9774-43DC-A205-3654A0D636FF - 9bd61ee747edcc5d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CloudDefender_V1_VIPER.HomeInteractor.uploadFileRequest(folderId: Swift.String, file: Foundation.Data, fileName: Swift.String, fileType: Swift.String) -&gt; ()"
+                  moduleName = "CloudDefender_V1_VIPER"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maksim/Documents/%D0%A3%D1%87%D0%B5%D0%B1%D0%B0/xcode-swift-test/CloudDefender_V1_VIPER/CloudDefender_V1_VIPER/app_modules/home_module/interactor/HomeInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "249"
+                  endingLineNumber = "249"
+                  offsetFromSymbolStart = "1641">
+               </Location>
+               <Location
+                  uuid = "7B4A0354-9774-43DC-A205-3654A0D636FF - 927eebf3d84953ab"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;) -&gt; () in CloudDefender_V1_VIPER.HomeInteractor.uploadFileRequest(folderId: Swift.String, file: Foundation.Data, fileName: Swift.String, fileType: Swift.String) -&gt; ()"
+                  moduleName = "CloudDefender_V1_VIPER"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maksim/Documents/%D0%A3%D1%87%D0%B5%D0%B1%D0%B0/xcode-swift-test/CloudDefender_V1_VIPER/CloudDefender_V1_VIPER/app_modules/home_module/interactor/HomeInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "250"
+                  endingLineNumber = "250"
+                  offsetFromSymbolStart = "390">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "990978A8-013B-4B54-897A-8416A209147B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CloudDefender_V1_VIPER/app_api/Auth/RegisterCloudDefender.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5E0B985C-C6CB-41BD-9E0D-2C7DC143F3F4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CloudDefender_V1_VIPER/app_api/Auth/RegisterCloudDefender.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "5E0B985C-C6CB-41BD-9E0D-2C7DC143F3F4 - f6dc557a925d1310"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CloudDefender_V1_VIPER.RegisterCloudDefender.register(userName: Swift.String, userEmail: Swift.String) -&gt; ()"
+                  moduleName = "CloudDefender_V1_VIPER"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maksim/Documents/%D0%A3%D1%87%D0%B5%D0%B1%D0%B0/xcode-swift-test/CloudDefender_V1_VIPER/CloudDefender_V1_VIPER/app_api/Auth/RegisterCloudDefender.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "1011">
+               </Location>
+               <Location
+                  uuid = "5E0B985C-C6CB-41BD-9E0D-2C7DC143F3F4 - 21f5e484e696292"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;) -&gt; () in CloudDefender_V1_VIPER.RegisterCloudDefender.register(userName: Swift.String, userEmail: Swift.String) -&gt; ()"
+                  moduleName = "CloudDefender_V1_VIPER"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maksim/Documents/%D0%A3%D1%87%D0%B5%D0%B1%D0%B0/xcode-swift-test/CloudDefender_V1_VIPER/CloudDefender_V1_VIPER/app_api/Auth/RegisterCloudDefender.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "83">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "923D5D65-B083-45BE-B54B-CCCD0CB1277D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CloudDefender_V1_VIPER/app_api/NetworkService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
+            landmarkName = "requestRegister(urlString:httpMethod:parameters:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B07D8B25-9715-4B88-8725-3FA0D3EEE24A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CloudDefender_V1_VIPER/app_api/NetworkService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "103"
+            endingLineNumber = "103"
+            landmarkName = "requestRegister(urlString:httpMethod:parameters:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7BCFCA65-2BE2-4C16-AA7F-ACF3A4D91EFA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CloudDefender_V1_VIPER/app_api/NetworkService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "107"
+            endingLineNumber = "107"
+            landmarkName = "requestRegister(urlString:httpMethod:parameters:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7BCFCA65-2BE2-4C16-AA7F-ACF3A4D91EFA - d20af33ce77bb10f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CloudDefender_V1_VIPER.NetworkService.requestRegister(urlString: Swift.String, httpMethod: Swift.String, parameters: Swift.Dictionary&lt;Swift.String, Any&gt;, completion: (Swift.Result&lt;Foundation.Data, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "CloudDefender_V1_VIPER"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maksim/Documents/%D0%A3%D1%87%D0%B5%D0%B1%D0%B0/xcode-swift-test/CloudDefender_V1_VIPER/CloudDefender_V1_VIPER/app_api/NetworkService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "127"
+                  endingLineNumber = "127"
+                  offsetFromSymbolStart = "1602">
+               </Location>
+               <Location
+                  uuid = "7BCFCA65-2BE2-4C16-AA7F-ACF3A4D91EFA - 85182b11fb17cd66"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in CloudDefender_V1_VIPER.NetworkService.requestRegister(urlString: Swift.String, httpMethod: Swift.String, parameters: Swift.Dictionary&lt;Swift.String, Any&gt;, completion: (Swift.Result&lt;Foundation.Data, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "CloudDefender_V1_VIPER"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maksim/Documents/%D0%A3%D1%87%D0%B5%D0%B1%D0%B0/xcode-swift-test/CloudDefender_V1_VIPER/CloudDefender_V1_VIPER/app_api/NetworkService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "129"
+                  endingLineNumber = "129"
+                  offsetFromSymbolStart = "278">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "606237D1-4E51-437C-ADF1-FD8354CF4F56"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CloudDefender_V1_VIPER/app_api/NetworkService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "109"
+            endingLineNumber = "109"
+            landmarkName = "requestRegister(urlString:httpMethod:parameters:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "606237D1-4E51-437C-ADF1-FD8354CF4F56 - 85182b11fb17cd66"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in CloudDefender_V1_VIPER.NetworkService.requestRegister(urlString: Swift.String, httpMethod: Swift.String, parameters: Swift.Dictionary&lt;Swift.String, Any&gt;, completion: (Swift.Result&lt;Foundation.Data, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "CloudDefender_V1_VIPER"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maksim/Documents/%D0%A3%D1%87%D0%B5%D0%B1%D0%B0/xcode-swift-test/CloudDefender_V1_VIPER/CloudDefender_V1_VIPER/app_api/NetworkService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "129"
+                  endingLineNumber = "129"
+                  offsetFromSymbolStart = "278">
+               </Location>
+               <Location
+                  uuid = "606237D1-4E51-437C-ADF1-FD8354CF4F56 - b38fd235b97554ef"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in CloudDefender_V1_VIPER.NetworkService.requestRegister(urlString: Swift.String, httpMethod: Swift.String, parameters: Swift.Dictionary&lt;Swift.String, Any&gt;, completion: (Swift.Result&lt;Foundation.Data, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "CloudDefender_V1_VIPER"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maksim/Documents/%D0%A3%D1%87%D0%B5%D0%B1%D0%B0/xcode-swift-test/CloudDefender_V1_VIPER/CloudDefender_V1_VIPER/app_api/NetworkService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "130"
+                  endingLineNumber = "130"
+                  offsetFromSymbolStart = "198">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4BEEA78E-12EC-4E22-BDA6-66FB937C1E97"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CloudDefender_V1_VIPER/app_api/NetworkService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
+            landmarkName = "requestRegister(urlString:httpMethod:parameters:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0C4C80F2-CE07-4BE9-A05A-997A64BF84CE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CloudDefender_V1_VIPER/app_modules/sign_module/interactor/SignInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "115"
+            endingLineNumber = "115"
+            landmarkName = "register(userName:userEmail:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2BF2D461-5306-4F14-823E-9EED29AB7AB2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CloudDefender_V1_VIPER/app_modules/sign_module/interactor/SignInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
+            landmarkName = "OAuth()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "ED061BC8-EDD6-431E-8E75-DA90E0FE19C3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CloudDefender_V1_VIPER/app_modules/sign_module/interactor/SignInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "102"
+            endingLineNumber = "102"
+            landmarkName = "register(userName:userEmail:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2D698DBD-2CB5-4356-BDC2-D4FF4A7E8759"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CloudDefender_V1_VIPER/app_modules/sign_module/interactor/SignInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
+            landmarkName = "register(userName:userEmail:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "63CB4DBF-7711-48FA-B710-C2B1B200E864"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CloudDefender_V1_VIPER/app_modules/sign_module/interactor/SignInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "oAuthSwift(navigationController:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "74C5505B-8718-473D-8A55-9AC89CEDDD4A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CloudDefender_V1_VIPER/app_modules/sign_module/interactor/SignInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "oAuthSwift(navigationController:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "99E346A7-F23D-468C-A045-B0ABCC225D06"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CloudDefender_V1_VIPER/app_modules/home_module/view/HomeCollectionViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "277D5E40-F4F7-4691-9CEA-DC04F635A7A2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CloudDefender_V1_VIPER/app_modules/home_module/view/HomeCollectionViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2152AA72-C8B3-41EA-8EF9-7FB8D5B4813A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CloudDefender_V1_VIPER/app_modules/home_module/interactor/HomeInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "149"
+            endingLineNumber = "149"
+            landmarkName = "createFolderRequest(folderId:newFolderName:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "214C2815-FEB1-46F6-B813-E6E0C159CA79"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CloudDefender_V1_VIPER/app_modules/home_module/interactor/HomeInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "forwardGetFoldersRequest(folderId:userId:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B8CB7A6E-3572-414F-B87B-5602CD4D6B92"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CloudDefender_V1_VIPER/app_modules/home_module/presenter/HomePresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "createFolder(folderId:newFolderName:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8976525D-044E-4266-84A2-8B835F2196B1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CloudDefender_V1_VIPER/app_modules/home_module/view/HomeCollectionViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "updateData(refreshControl:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0EBD515A-88B4-4B35-AF75-FDB089D2A7EB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CloudDefender_V1_VIPER/app_modules/home_module/interactor/HomeInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "forwardGetFoldersRequest(folderId:userId:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FAAAEDAC-C552-416A-A5B1-25417E04B91D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CloudDefender_V1_VIPER/app_modules/home_module/interactor/HomeInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "getFoldersRequest(folderId:direction:userId:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F6A3B71E-3EED-453A-BB92-AC508CA7F578"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CloudDefender_V1_VIPER/app_modules/home_module/view/HomeCollectionViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "227"
+            endingLineNumber = "227"
+            landmarkName = "showFolders(folders:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FDCBDEF0-AA36-490C-80CC-3ED4809E38BD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CloudDefender_V1_VIPER/app_modules/home_module/interactor/HomeInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "forwardGetFoldersRequest(folderId:userId:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1F2B728E-6D3F-40A0-B24B-5E8590720EC0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CloudDefender_V1_VIPER/app_modules/sign_module/presenter/SignPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "SignPresenter"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EECCD99F-649B-4F6A-9D42-007E411014B8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CloudDefender_V1_VIPER/app_view_helper/HomeViewPickerController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "imagePickerController(_:didFinishPickingMediaWithInfo:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

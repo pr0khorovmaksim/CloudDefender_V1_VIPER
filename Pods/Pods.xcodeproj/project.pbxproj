@@ -1,0 +1,1001 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08DF0AA5A24B59C3EAEA6BCE2A80EAE8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		0FF52DF67A2175B311805ADD818FCD8C /* Collection+OAuthSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE88DD87B8A12027CCEF3DE2F02D3594 /* Collection+OAuthSwift.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		18762F9E00BD9A0E49B8A6A3C2813A4E /* OAuthSwiftCredential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F43991F94D4CB3F724E5D4D88891EB3 /* OAuthSwiftCredential.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2B575065ECA97624B565ED3D8297F712 /* Pods-CloudDefender_V1_VIPERUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CE403289D7DAC0614718FE49AB6BCED /* Pods-CloudDefender_V1_VIPERUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FBDACB8B44271E79040F94E469AB374 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		355B1ADB67E5E5028DE10551CE679AEE /* Pods-CloudDefender_V1_VIPERTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A14E0C845CE467E3AD53A9802D9DAAEC /* Pods-CloudDefender_V1_VIPERTests-dummy.m */; };
+		36D6A8C6B020F94687E85DAB6A21A8FA /* OAuthSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626D7FE7C13594FA97B371DE2B1D2DFF /* OAuthSwift.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3A08015AEC2B5995159D5BB4CCCC8712 /* NotificationCenter+OAuthSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57AB2C41C023943E3F2A4B895A27631 /* NotificationCenter+OAuthSwift.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		48CC1F68D3B9DE0A713076400786BF60 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1604FD7682F1ACA34649D3FE4819FC /* Utils.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4CCC884D8748B692320FA2F3672AE5EA /* OAuthSwiftError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA3AAA6BD609BA7D6EE7EAE767DAB4D /* OAuthSwiftError.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		532D8FAC3C93B544BFE09BD0D43A9914 /* Pods-CloudDefender_V1_VIPER-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0AE77B1C54625E622196228D444156 /* Pods-CloudDefender_V1_VIPER-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5E8E8AA582309A0D4795E3F7B0DF9BFB /* Int+OAuthSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E322FED63BA16BC78F359B3C36EB5A5 /* Int+OAuthSwift.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6050764A48A80234ADEC593AC30384D9 /* Data+OAuthSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC2DC868612CFF0A522AEA3F25C7B73 /* Data+OAuthSwift.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		607899674FC255ECF40F9BFBE19CF768 /* Pods-CloudDefender_V1_VIPER-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B59955BF1869342C7E2DEE567AAE89C /* Pods-CloudDefender_V1_VIPER-dummy.m */; };
+		65E603FE52284A4B812CF4D8404575B3 /* OAuthSwiftHTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA6FC850879988BB442D4FF1629DF03 /* OAuthSwiftHTTPRequest.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		670CE976F5C20DACCE350E196C099A6B /* UIApplication+OAuthSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2AE090A4D07C8B1279827BB0FA05B1 /* UIApplication+OAuthSwift.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6E9A9DA666BB8348F9ABBA524EB36EF9 /* URLConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C237D4FBF520AD821734304B4DD432 /* URLConvertible.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		76A04C874596BFF2FFD92F4A807B0F29 /* OAuthSwiftURLHandlerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F751511245C03E9284EA0907652BCC /* OAuthSwiftURLHandlerType.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8483482AB25E39C543CD98F9837D6C38 /* OAuthSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 48AA413B44C8574F483080A1453BA0F3 /* OAuthSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8931F7B398A9F4972CCE9541533F5E69 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		8A40D7D0EF019D6987D37D0FEC271B2F /* NSError+OAuthSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF0D24C68F8BAA83459A43F8553DB60 /* NSError+OAuthSwift.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9108BDB116CBA93DA7C7D96E338D470A /* Dictionary+OAuthSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDCD6DAF273D9AFFC96FC0C1ABBDEBC /* Dictionary+OAuthSwift.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		938543D94F28236C08D3CE81272CA67C /* OAuthSwiftMultipartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4672F922A74982E47F4F67E84AEE58 /* OAuthSwiftMultipartData.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		98EB5358AA1EFDF340667D759948CED5 /* OAuth2Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D401FE8D5C71B950FDC58EFF3C7ABCE /* OAuth2Swift.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A20451A10D9CC6C5D85BDB7103FD4359 /* URL+OAuthSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD82C620335B6D62620914D9C2BE157 /* URL+OAuthSwift.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A69FF368EB8341CC8A315051C2A4A0A7 /* OAuthSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7491C99495352B44359BCBCCC6D29318 /* OAuthSwift-dummy.m */; };
+		B557C62BC59C952F2E9A1F71A70B405C /* SHA1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1779635AD51F8D2DD0800FD60ADF2DF2 /* SHA1.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C4CCB2DE304E3B140D3FC9FD396FB01F /* OAuthWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33B9F0A55ACFF7AA1DBB8DB5C85C717 /* OAuthWebViewController.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C4EB43A9FA317968A41EF37FB00D286E /* String+OAuthSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF5F4D5DCB6675E56847A7F271C41CC /* String+OAuthSwift.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C9142A7833C34111B8FD00FC71D0A6AD /* Pods-CloudDefender_V1_VIPERUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A3421AC343088CFE332B444C4DB6F1F /* Pods-CloudDefender_V1_VIPERUITests-dummy.m */; };
+		D08B5CAA40D70A74C198F5EDF85E266D /* OAuth1Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15658C57CD03A2E40AFEB498B307AEC /* OAuth1Swift.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D65BB6F2BE937302BE7FE64FA959FF7E /* OAuthSwiftResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE19EB63CD279BEC89ABD0313D04D85 /* OAuthSwiftResponse.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E5C17463186D83A150C69A0B631CB5AF /* Pods-CloudDefender_V1_VIPERTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7C440EC813D66A55E2981A31068BB5 /* Pods-CloudDefender_V1_VIPERTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E69E72ECE8AC058429D2D072127AD431 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		F951C6393993F51C7EF572DF4EC9B9E3 /* OAuthSwiftClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B774DB7022B17D3FF72458C47F28593 /* OAuthSwiftClient.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F975E8BBF0295C9EC2FCAFA7F50C4608 /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF18620B74DDAEBD9A8EC56F030B788 /* HMAC.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		042E5C6A8E51BB71E1AA4D791692A252 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2454777C49CAA8047B0A2C71DFC3C720;
+			remoteInfo = "Pods-CloudDefender_V1_VIPER";
+		};
+		4C2D93C3722BE7594567838D9642F9FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2454777C49CAA8047B0A2C71DFC3C720;
+			remoteInfo = "Pods-CloudDefender_V1_VIPER";
+		};
+		DCDF3596BC8E6523FC0EE0D09C934642 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85C745DF85EB0711CFCC6ACD6069E401;
+			remoteInfo = OAuthSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00D0B5C910FE0361A1BCD76E67889E81 /* Pods-CloudDefender_V1_VIPER-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CloudDefender_V1_VIPER-acknowledgements.markdown"; sourceTree = "<group>"; };
+		04E8AD65DCE68D6BDFA9E89893F70F26 /* Pods-CloudDefender_V1_VIPERTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CloudDefender_V1_VIPERTests.release.xcconfig"; sourceTree = "<group>"; };
+		0B59955BF1869342C7E2DEE567AAE89C /* Pods-CloudDefender_V1_VIPER-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CloudDefender_V1_VIPER-dummy.m"; sourceTree = "<group>"; };
+		0DD82C620335B6D62620914D9C2BE157 /* URL+OAuthSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URL+OAuthSwift.swift"; path = "Sources/URL+OAuthSwift.swift"; sourceTree = "<group>"; };
+		0F0AE77B1C54625E622196228D444156 /* Pods-CloudDefender_V1_VIPER-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CloudDefender_V1_VIPER-umbrella.h"; sourceTree = "<group>"; };
+		10A5BC881B366FFAC3B788BBDC67F964 /* Pods-CloudDefender_V1_VIPERTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CloudDefender_V1_VIPERTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		13F751511245C03E9284EA0907652BCC /* OAuthSwiftURLHandlerType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuthSwiftURLHandlerType.swift; path = Sources/OAuthSwiftURLHandlerType.swift; sourceTree = "<group>"; };
+		176D2235089D5DB273F5D7A4F3D10A30 /* Pods_CloudDefender_V1_VIPER.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CloudDefender_V1_VIPER.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1779635AD51F8D2DD0800FD60ADF2DF2 /* SHA1.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SHA1.swift; path = Sources/SHA1.swift; sourceTree = "<group>"; };
+		182F18E6AEC4BFEB10075345151EDDDF /* Pods-CloudDefender_V1_VIPERTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CloudDefender_V1_VIPERTests.modulemap"; sourceTree = "<group>"; };
+		19ECB2D2EE7F62FB04E6027EF8FB8B0E /* OAuthSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OAuthSwift-prefix.pch"; sourceTree = "<group>"; };
+		1A3421AC343088CFE332B444C4DB6F1F /* Pods-CloudDefender_V1_VIPERUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CloudDefender_V1_VIPERUITests-dummy.m"; sourceTree = "<group>"; };
+		1AF5F4D5DCB6675E56847A7F271C41CC /* String+OAuthSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+OAuthSwift.swift"; path = "Sources/String+OAuthSwift.swift"; sourceTree = "<group>"; };
+		22EC4E5C40ECC2D9C40013533B6E09EE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2764933BD36F4A19D39A56C897FF3E8F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CE403289D7DAC0614718FE49AB6BCED /* Pods-CloudDefender_V1_VIPERUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CloudDefender_V1_VIPERUITests-umbrella.h"; sourceTree = "<group>"; };
+		3B774DB7022B17D3FF72458C47F28593 /* OAuthSwiftClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuthSwiftClient.swift; path = Sources/OAuthSwiftClient.swift; sourceTree = "<group>"; };
+		3CDCD6DAF273D9AFFC96FC0C1ABBDEBC /* Dictionary+OAuthSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Dictionary+OAuthSwift.swift"; path = "Sources/Dictionary+OAuthSwift.swift"; sourceTree = "<group>"; };
+		3F43991F94D4CB3F724E5D4D88891EB3 /* OAuthSwiftCredential.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuthSwiftCredential.swift; path = Sources/OAuthSwiftCredential.swift; sourceTree = "<group>"; };
+		46EED673708AF75D33B8974DD3C81DCB /* Pods-CloudDefender_V1_VIPER.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CloudDefender_V1_VIPER.modulemap"; sourceTree = "<group>"; };
+		48AA413B44C8574F483080A1453BA0F3 /* OAuthSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OAuthSwift-umbrella.h"; sourceTree = "<group>"; };
+		5130A931EDF4D791D445D12A4BE275F3 /* Pods-CloudDefender_V1_VIPERUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CloudDefender_V1_VIPERUITests.release.xcconfig"; sourceTree = "<group>"; };
+		518C713642D6084B1A5F28764630859E /* Pods-CloudDefender_V1_VIPERTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CloudDefender_V1_VIPERTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5B9F57639343B94B328FD294B4F28644 /* Pods-CloudDefender_V1_VIPERUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CloudDefender_V1_VIPERUITests-resources.sh"; sourceTree = "<group>"; };
+		5D401FE8D5C71B950FDC58EFF3C7ABCE /* OAuth2Swift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2Swift.swift; path = Sources/OAuth2Swift.swift; sourceTree = "<group>"; };
+		5D4672F922A74982E47F4F67E84AEE58 /* OAuthSwiftMultipartData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuthSwiftMultipartData.swift; path = Sources/OAuthSwiftMultipartData.swift; sourceTree = "<group>"; };
+		5DC59C46222447650506D6AAC19B76E0 /* Pods-CloudDefender_V1_VIPER-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CloudDefender_V1_VIPER-resources.sh"; sourceTree = "<group>"; };
+		5DF18620B74DDAEBD9A8EC56F030B788 /* HMAC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HMAC.swift; path = Sources/HMAC.swift; sourceTree = "<group>"; };
+		5E322FED63BA16BC78F359B3C36EB5A5 /* Int+OAuthSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Int+OAuthSwift.swift"; path = "Sources/Int+OAuthSwift.swift"; sourceTree = "<group>"; };
+		5FA6FC850879988BB442D4FF1629DF03 /* OAuthSwiftHTTPRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuthSwiftHTTPRequest.swift; path = Sources/OAuthSwiftHTTPRequest.swift; sourceTree = "<group>"; };
+		626D7FE7C13594FA97B371DE2B1D2DFF /* OAuthSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuthSwift.swift; path = Sources/OAuthSwift.swift; sourceTree = "<group>"; };
+		6642200C44E0C3410ED683E20622285A /* Pods-CloudDefender_V1_VIPERTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CloudDefender_V1_VIPERTests-resources.sh"; sourceTree = "<group>"; };
+		6CF22E3C2DC5C25613301098E86FD44B /* Pods-CloudDefender_V1_VIPERTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CloudDefender_V1_VIPERTests-frameworks.sh"; sourceTree = "<group>"; };
+		7457328621EB4AF706ED18994E46FF58 /* Pods-CloudDefender_V1_VIPERUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CloudDefender_V1_VIPERUITests.modulemap"; sourceTree = "<group>"; };
+		7491C99495352B44359BCBCCC6D29318 /* OAuthSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OAuthSwift-dummy.m"; sourceTree = "<group>"; };
+		7A1604FD7682F1ACA34649D3FE4819FC /* Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = Sources/Utils.swift; sourceTree = "<group>"; };
+		8AC2DC868612CFF0A522AEA3F25C7B73 /* Data+OAuthSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+OAuthSwift.swift"; path = "Sources/Data+OAuthSwift.swift"; sourceTree = "<group>"; };
+		8CA3AAA6BD609BA7D6EE7EAE767DAB4D /* OAuthSwiftError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuthSwiftError.swift; path = Sources/OAuthSwiftError.swift; sourceTree = "<group>"; };
+		8CE19EB63CD279BEC89ABD0313D04D85 /* OAuthSwiftResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuthSwiftResponse.swift; path = Sources/OAuthSwiftResponse.swift; sourceTree = "<group>"; };
+		91E87F122E45CBA1B8B0BB09EAF47129 /* Pods-CloudDefender_V1_VIPERUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CloudDefender_V1_VIPERUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		97C237D4FBF520AD821734304B4DD432 /* URLConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLConvertible.swift; path = Sources/URLConvertible.swift; sourceTree = "<group>"; };
+		99D397FB2396AB12AF2A7717FA22F924 /* Pods-CloudDefender_V1_VIPERUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CloudDefender_V1_VIPERUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9FD48BB18CCBF289E50C66798ACDA06E /* Pods-CloudDefender_V1_VIPERUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CloudDefender_V1_VIPERUITests-frameworks.sh"; sourceTree = "<group>"; };
+		A14E0C845CE467E3AD53A9802D9DAAEC /* Pods-CloudDefender_V1_VIPERTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CloudDefender_V1_VIPERTests-dummy.m"; sourceTree = "<group>"; };
+		A15658C57CD03A2E40AFEB498B307AEC /* OAuth1Swift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth1Swift.swift; path = Sources/OAuth1Swift.swift; sourceTree = "<group>"; };
+		ACC480682DB72C4D5B2CE4CC4DE79F2E /* Pods-CloudDefender_V1_VIPER-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CloudDefender_V1_VIPER-acknowledgements.plist"; sourceTree = "<group>"; };
+		AD3524B399F508F095D135E9CF7D8491 /* OAuthSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = OAuthSwift.modulemap; sourceTree = "<group>"; };
+		AEDA9303FCBF8B42A8B5CF3C373721C6 /* Pods-CloudDefender_V1_VIPER.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CloudDefender_V1_VIPER.release.xcconfig"; sourceTree = "<group>"; };
+		B0F5DF5EA87B54A3E332B8F05206C232 /* Pods_CloudDefender_V1_VIPERUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CloudDefender_V1_VIPERUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC7C440EC813D66A55E2981A31068BB5 /* Pods-CloudDefender_V1_VIPERTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CloudDefender_V1_VIPERTests-umbrella.h"; sourceTree = "<group>"; };
+		BCAA85D1EA0BA4E3716D17E6C228480E /* Pods-CloudDefender_V1_VIPERUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CloudDefender_V1_VIPERUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		C198DF0BA1E9B12339B4CB8DAD064DFF /* Pods-CloudDefender_V1_VIPER-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CloudDefender_V1_VIPER-frameworks.sh"; sourceTree = "<group>"; };
+		D0074C36E4B2360642921EA07672E298 /* Pods-CloudDefender_V1_VIPERTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CloudDefender_V1_VIPERTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D33B9F0A55ACFF7AA1DBB8DB5C85C717 /* OAuthWebViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuthWebViewController.swift; path = Sources/OAuthWebViewController.swift; sourceTree = "<group>"; };
+		D57AB2C41C023943E3F2A4B895A27631 /* NotificationCenter+OAuthSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NotificationCenter+OAuthSwift.swift"; path = "Sources/NotificationCenter+OAuthSwift.swift"; sourceTree = "<group>"; };
+		D58F5FB73A4561252888407A97E2AF0F /* OAuthSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OAuthSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D89008BED6181F87F39DEAF4DD587635 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1CA79BDEFB14ABC2A3D8284C0EF490D /* Pods-CloudDefender_V1_VIPER.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CloudDefender_V1_VIPER.debug.xcconfig"; sourceTree = "<group>"; };
+		E9CC9D81FA20C209030823B3DA34FABF /* Pods_CloudDefender_V1_VIPERTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CloudDefender_V1_VIPERTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC3ABA82B6252273CBC72820E783C666 /* OAuthSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OAuthSwift.xcconfig; sourceTree = "<group>"; };
+		F051EEA93B8C57CF7D72B9412818A31C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC2AE090A4D07C8B1279827BB0FA05B1 /* UIApplication+OAuthSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIApplication+OAuthSwift.swift"; path = "Sources/UIApplication+OAuthSwift.swift"; sourceTree = "<group>"; };
+		FE88DD87B8A12027CCEF3DE2F02D3594 /* Collection+OAuthSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Collection+OAuthSwift.swift"; path = "Sources/Collection+OAuthSwift.swift"; sourceTree = "<group>"; };
+		FFF0D24C68F8BAA83459A43F8553DB60 /* NSError+OAuthSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSError+OAuthSwift.swift"; path = "Sources/NSError+OAuthSwift.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		918BD677DB76CB96FDE181D8DCAFC776 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E69E72ECE8AC058429D2D072127AD431 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A92C60F72B0C9A04BF963C33659B56A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8931F7B398A9F4972CCE9541533F5E69 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA033EA5CF132B01C000252B5769708F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FBDACB8B44271E79040F94E469AB374 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAEE43D417D6AEAE8CD278A12FA70C4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08DF0AA5A24B59C3EAEA6BCE2A80EAE8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		27DC2F86E72CCF0CC536D7F1049967F0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D89008BED6181F87F39DEAF4DD587635 /* Info.plist */,
+				AD3524B399F508F095D135E9CF7D8491 /* OAuthSwift.modulemap */,
+				EC3ABA82B6252273CBC72820E783C666 /* OAuthSwift.xcconfig */,
+				7491C99495352B44359BCBCCC6D29318 /* OAuthSwift-dummy.m */,
+				19ECB2D2EE7F62FB04E6027EF8FB8B0E /* OAuthSwift-prefix.pch */,
+				48AA413B44C8574F483080A1453BA0F3 /* OAuthSwift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/OAuthSwift";
+			sourceTree = "<group>";
+		};
+		3ABA078F7A1479250F0374FF4AC5B286 /* OAuthSwift */ = {
+			isa = PBXGroup;
+			children = (
+				FE88DD87B8A12027CCEF3DE2F02D3594 /* Collection+OAuthSwift.swift */,
+				8AC2DC868612CFF0A522AEA3F25C7B73 /* Data+OAuthSwift.swift */,
+				3CDCD6DAF273D9AFFC96FC0C1ABBDEBC /* Dictionary+OAuthSwift.swift */,
+				5DF18620B74DDAEBD9A8EC56F030B788 /* HMAC.swift */,
+				5E322FED63BA16BC78F359B3C36EB5A5 /* Int+OAuthSwift.swift */,
+				D57AB2C41C023943E3F2A4B895A27631 /* NotificationCenter+OAuthSwift.swift */,
+				FFF0D24C68F8BAA83459A43F8553DB60 /* NSError+OAuthSwift.swift */,
+				A15658C57CD03A2E40AFEB498B307AEC /* OAuth1Swift.swift */,
+				5D401FE8D5C71B950FDC58EFF3C7ABCE /* OAuth2Swift.swift */,
+				626D7FE7C13594FA97B371DE2B1D2DFF /* OAuthSwift.swift */,
+				3B774DB7022B17D3FF72458C47F28593 /* OAuthSwiftClient.swift */,
+				3F43991F94D4CB3F724E5D4D88891EB3 /* OAuthSwiftCredential.swift */,
+				8CA3AAA6BD609BA7D6EE7EAE767DAB4D /* OAuthSwiftError.swift */,
+				5FA6FC850879988BB442D4FF1629DF03 /* OAuthSwiftHTTPRequest.swift */,
+				5D4672F922A74982E47F4F67E84AEE58 /* OAuthSwiftMultipartData.swift */,
+				8CE19EB63CD279BEC89ABD0313D04D85 /* OAuthSwiftResponse.swift */,
+				13F751511245C03E9284EA0907652BCC /* OAuthSwiftURLHandlerType.swift */,
+				D33B9F0A55ACFF7AA1DBB8DB5C85C717 /* OAuthWebViewController.swift */,
+				1779635AD51F8D2DD0800FD60ADF2DF2 /* SHA1.swift */,
+				1AF5F4D5DCB6675E56847A7F271C41CC /* String+OAuthSwift.swift */,
+				FC2AE090A4D07C8B1279827BB0FA05B1 /* UIApplication+OAuthSwift.swift */,
+				0DD82C620335B6D62620914D9C2BE157 /* URL+OAuthSwift.swift */,
+				97C237D4FBF520AD821734304B4DD432 /* URLConvertible.swift */,
+				7A1604FD7682F1ACA34649D3FE4819FC /* Utils.swift */,
+				27DC2F86E72CCF0CC536D7F1049967F0 /* Support Files */,
+			);
+			path = OAuthSwift;
+			sourceTree = "<group>";
+		};
+		403BD47775FE333DAACB4AD1C6E23861 /* Pods-CloudDefender_V1_VIPERUITests */ = {
+			isa = PBXGroup;
+			children = (
+				22EC4E5C40ECC2D9C40013533B6E09EE /* Info.plist */,
+				7457328621EB4AF706ED18994E46FF58 /* Pods-CloudDefender_V1_VIPERUITests.modulemap */,
+				91E87F122E45CBA1B8B0BB09EAF47129 /* Pods-CloudDefender_V1_VIPERUITests-acknowledgements.markdown */,
+				BCAA85D1EA0BA4E3716D17E6C228480E /* Pods-CloudDefender_V1_VIPERUITests-acknowledgements.plist */,
+				1A3421AC343088CFE332B444C4DB6F1F /* Pods-CloudDefender_V1_VIPERUITests-dummy.m */,
+				9FD48BB18CCBF289E50C66798ACDA06E /* Pods-CloudDefender_V1_VIPERUITests-frameworks.sh */,
+				5B9F57639343B94B328FD294B4F28644 /* Pods-CloudDefender_V1_VIPERUITests-resources.sh */,
+				2CE403289D7DAC0614718FE49AB6BCED /* Pods-CloudDefender_V1_VIPERUITests-umbrella.h */,
+				99D397FB2396AB12AF2A7717FA22F924 /* Pods-CloudDefender_V1_VIPERUITests.debug.xcconfig */,
+				5130A931EDF4D791D445D12A4BE275F3 /* Pods-CloudDefender_V1_VIPERUITests.release.xcconfig */,
+			);
+			name = "Pods-CloudDefender_V1_VIPERUITests";
+			path = "Target Support Files/Pods-CloudDefender_V1_VIPERUITests";
+			sourceTree = "<group>";
+		};
+		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		736861EF0629CDB12F1AFB68BF9DD2C6 /* Pods-CloudDefender_V1_VIPER */ = {
+			isa = PBXGroup;
+			children = (
+				2764933BD36F4A19D39A56C897FF3E8F /* Info.plist */,
+				46EED673708AF75D33B8974DD3C81DCB /* Pods-CloudDefender_V1_VIPER.modulemap */,
+				00D0B5C910FE0361A1BCD76E67889E81 /* Pods-CloudDefender_V1_VIPER-acknowledgements.markdown */,
+				ACC480682DB72C4D5B2CE4CC4DE79F2E /* Pods-CloudDefender_V1_VIPER-acknowledgements.plist */,
+				0B59955BF1869342C7E2DEE567AAE89C /* Pods-CloudDefender_V1_VIPER-dummy.m */,
+				C198DF0BA1E9B12339B4CB8DAD064DFF /* Pods-CloudDefender_V1_VIPER-frameworks.sh */,
+				5DC59C46222447650506D6AAC19B76E0 /* Pods-CloudDefender_V1_VIPER-resources.sh */,
+				0F0AE77B1C54625E622196228D444156 /* Pods-CloudDefender_V1_VIPER-umbrella.h */,
+				E1CA79BDEFB14ABC2A3D8284C0EF490D /* Pods-CloudDefender_V1_VIPER.debug.xcconfig */,
+				AEDA9303FCBF8B42A8B5CF3C373721C6 /* Pods-CloudDefender_V1_VIPER.release.xcconfig */,
+			);
+			name = "Pods-CloudDefender_V1_VIPER";
+			path = "Target Support Files/Pods-CloudDefender_V1_VIPER";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				B918C9FBC3D445AAA5D966B9DCB2BA2D /* Pods */,
+				FD1AE2DA7681EF0AA72E50939D8944B9 /* Products */,
+				85E1513E3D0EE34E0BE5F649141E2812 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		85E1513E3D0EE34E0BE5F649141E2812 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				736861EF0629CDB12F1AFB68BF9DD2C6 /* Pods-CloudDefender_V1_VIPER */,
+				BC8FA0A685BA6472E6E32BD5924E1CBD /* Pods-CloudDefender_V1_VIPERTests */,
+				403BD47775FE333DAACB4AD1C6E23861 /* Pods-CloudDefender_V1_VIPERUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		B918C9FBC3D445AAA5D966B9DCB2BA2D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3ABA078F7A1479250F0374FF4AC5B286 /* OAuthSwift */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E0D919E635D23B70123790B8308F8EF /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC8FA0A685BA6472E6E32BD5924E1CBD /* Pods-CloudDefender_V1_VIPERTests */ = {
+			isa = PBXGroup;
+			children = (
+				F051EEA93B8C57CF7D72B9412818A31C /* Info.plist */,
+				182F18E6AEC4BFEB10075345151EDDDF /* Pods-CloudDefender_V1_VIPERTests.modulemap */,
+				518C713642D6084B1A5F28764630859E /* Pods-CloudDefender_V1_VIPERTests-acknowledgements.markdown */,
+				10A5BC881B366FFAC3B788BBDC67F964 /* Pods-CloudDefender_V1_VIPERTests-acknowledgements.plist */,
+				A14E0C845CE467E3AD53A9802D9DAAEC /* Pods-CloudDefender_V1_VIPERTests-dummy.m */,
+				6CF22E3C2DC5C25613301098E86FD44B /* Pods-CloudDefender_V1_VIPERTests-frameworks.sh */,
+				6642200C44E0C3410ED683E20622285A /* Pods-CloudDefender_V1_VIPERTests-resources.sh */,
+				BC7C440EC813D66A55E2981A31068BB5 /* Pods-CloudDefender_V1_VIPERTests-umbrella.h */,
+				D0074C36E4B2360642921EA07672E298 /* Pods-CloudDefender_V1_VIPERTests.debug.xcconfig */,
+				04E8AD65DCE68D6BDFA9E89893F70F26 /* Pods-CloudDefender_V1_VIPERTests.release.xcconfig */,
+			);
+			name = "Pods-CloudDefender_V1_VIPERTests";
+			path = "Target Support Files/Pods-CloudDefender_V1_VIPERTests";
+			sourceTree = "<group>";
+		};
+		FD1AE2DA7681EF0AA72E50939D8944B9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D58F5FB73A4561252888407A97E2AF0F /* OAuthSwift.framework */,
+				176D2235089D5DB273F5D7A4F3D10A30 /* Pods_CloudDefender_V1_VIPER.framework */,
+				E9CC9D81FA20C209030823B3DA34FABF /* Pods_CloudDefender_V1_VIPERTests.framework */,
+				B0F5DF5EA87B54A3E332B8F05206C232 /* Pods_CloudDefender_V1_VIPERUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		01601BD24CA6E001FE0148B52F3AAC08 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8483482AB25E39C543CD98F9837D6C38 /* OAuthSwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B917425E8E5CC6459FFB981E949C9D9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				532D8FAC3C93B544BFE09BD0D43A9914 /* Pods-CloudDefender_V1_VIPER-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57780EF3DD5BF0C25B29B52008F02650 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5C17463186D83A150C69A0B631CB5AF /* Pods-CloudDefender_V1_VIPERTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AED1DE6A7EBA85F572B21117E8071A34 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B575065ECA97624B565ED3D8297F712 /* Pods-CloudDefender_V1_VIPERUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2454777C49CAA8047B0A2C71DFC3C720 /* Pods-CloudDefender_V1_VIPER */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44892D584B5E20C81D846F7DEBF043D9 /* Build configuration list for PBXNativeTarget "Pods-CloudDefender_V1_VIPER" */;
+			buildPhases = (
+				AF0745AB99B695EA68E140268F2316FC /* Sources */,
+				FAEE43D417D6AEAE8CD278A12FA70C4D /* Frameworks */,
+				2B917425E8E5CC6459FFB981E949C9D9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C759B24A8A7CBDC222ED56E022712F51 /* PBXTargetDependency */,
+			);
+			name = "Pods-CloudDefender_V1_VIPER";
+			productName = "Pods-CloudDefender_V1_VIPER";
+			productReference = 176D2235089D5DB273F5D7A4F3D10A30 /* Pods_CloudDefender_V1_VIPER.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		85C745DF85EB0711CFCC6ACD6069E401 /* OAuthSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9334CA54BB67AC53699E9BDDB2D3D3F /* Build configuration list for PBXNativeTarget "OAuthSwift" */;
+			buildPhases = (
+				8CF30EB61E7B2ECB1DC9A0ED247ED746 /* Sources */,
+				A92C60F72B0C9A04BF963C33659B56A0 /* Frameworks */,
+				01601BD24CA6E001FE0148B52F3AAC08 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OAuthSwift;
+			productName = OAuthSwift;
+			productReference = D58F5FB73A4561252888407A97E2AF0F /* OAuthSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A278CC4B84BCC0D9820C37CEC6859CAF /* Pods-CloudDefender_V1_VIPERTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F96DD98540AD93177E6C816C481783C3 /* Build configuration list for PBXNativeTarget "Pods-CloudDefender_V1_VIPERTests" */;
+			buildPhases = (
+				908A0E230025E8ED4BB159D366237EFB /* Sources */,
+				BA033EA5CF132B01C000252B5769708F /* Frameworks */,
+				57780EF3DD5BF0C25B29B52008F02650 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				91F467BA881EEB99411CE64B0D45900B /* PBXTargetDependency */,
+			);
+			name = "Pods-CloudDefender_V1_VIPERTests";
+			productName = "Pods-CloudDefender_V1_VIPERTests";
+			productReference = E9CC9D81FA20C209030823B3DA34FABF /* Pods_CloudDefender_V1_VIPERTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E2966E0B4C4185E038E84051581A624F /* Pods-CloudDefender_V1_VIPERUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8EA8BA82946C60619DA834BB77FBF5A /* Build configuration list for PBXNativeTarget "Pods-CloudDefender_V1_VIPERUITests" */;
+			buildPhases = (
+				D2E495320BDE9E5DB18FF7A4AE13F9BF /* Sources */,
+				918BD677DB76CB96FDE181D8DCAFC776 /* Frameworks */,
+				AED1DE6A7EBA85F572B21117E8071A34 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8F2F81A432C69927B5DEF25689738799 /* PBXTargetDependency */,
+			);
+			name = "Pods-CloudDefender_V1_VIPERUITests";
+			productName = "Pods-CloudDefender_V1_VIPERUITests";
+			productReference = B0F5DF5EA87B54A3E332B8F05206C232 /* Pods_CloudDefender_V1_VIPERUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 1160;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = FD1AE2DA7681EF0AA72E50939D8944B9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				85C745DF85EB0711CFCC6ACD6069E401 /* OAuthSwift */,
+				2454777C49CAA8047B0A2C71DFC3C720 /* Pods-CloudDefender_V1_VIPER */,
+				A278CC4B84BCC0D9820C37CEC6859CAF /* Pods-CloudDefender_V1_VIPERTests */,
+				E2966E0B4C4185E038E84051581A624F /* Pods-CloudDefender_V1_VIPERUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8CF30EB61E7B2ECB1DC9A0ED247ED746 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FF52DF67A2175B311805ADD818FCD8C /* Collection+OAuthSwift.swift in Sources */,
+				6050764A48A80234ADEC593AC30384D9 /* Data+OAuthSwift.swift in Sources */,
+				9108BDB116CBA93DA7C7D96E338D470A /* Dictionary+OAuthSwift.swift in Sources */,
+				F975E8BBF0295C9EC2FCAFA7F50C4608 /* HMAC.swift in Sources */,
+				5E8E8AA582309A0D4795E3F7B0DF9BFB /* Int+OAuthSwift.swift in Sources */,
+				3A08015AEC2B5995159D5BB4CCCC8712 /* NotificationCenter+OAuthSwift.swift in Sources */,
+				8A40D7D0EF019D6987D37D0FEC271B2F /* NSError+OAuthSwift.swift in Sources */,
+				D08B5CAA40D70A74C198F5EDF85E266D /* OAuth1Swift.swift in Sources */,
+				98EB5358AA1EFDF340667D759948CED5 /* OAuth2Swift.swift in Sources */,
+				A69FF368EB8341CC8A315051C2A4A0A7 /* OAuthSwift-dummy.m in Sources */,
+				36D6A8C6B020F94687E85DAB6A21A8FA /* OAuthSwift.swift in Sources */,
+				F951C6393993F51C7EF572DF4EC9B9E3 /* OAuthSwiftClient.swift in Sources */,
+				18762F9E00BD9A0E49B8A6A3C2813A4E /* OAuthSwiftCredential.swift in Sources */,
+				4CCC884D8748B692320FA2F3672AE5EA /* OAuthSwiftError.swift in Sources */,
+				65E603FE52284A4B812CF4D8404575B3 /* OAuthSwiftHTTPRequest.swift in Sources */,
+				938543D94F28236C08D3CE81272CA67C /* OAuthSwiftMultipartData.swift in Sources */,
+				D65BB6F2BE937302BE7FE64FA959FF7E /* OAuthSwiftResponse.swift in Sources */,
+				76A04C874596BFF2FFD92F4A807B0F29 /* OAuthSwiftURLHandlerType.swift in Sources */,
+				C4CCB2DE304E3B140D3FC9FD396FB01F /* OAuthWebViewController.swift in Sources */,
+				B557C62BC59C952F2E9A1F71A70B405C /* SHA1.swift in Sources */,
+				C4EB43A9FA317968A41EF37FB00D286E /* String+OAuthSwift.swift in Sources */,
+				670CE976F5C20DACCE350E196C099A6B /* UIApplication+OAuthSwift.swift in Sources */,
+				A20451A10D9CC6C5D85BDB7103FD4359 /* URL+OAuthSwift.swift in Sources */,
+				6E9A9DA666BB8348F9ABBA524EB36EF9 /* URLConvertible.swift in Sources */,
+				48CC1F68D3B9DE0A713076400786BF60 /* Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		908A0E230025E8ED4BB159D366237EFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				355B1ADB67E5E5028DE10551CE679AEE /* Pods-CloudDefender_V1_VIPERTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF0745AB99B695EA68E140268F2316FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				607899674FC255ECF40F9BFBE19CF768 /* Pods-CloudDefender_V1_VIPER-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2E495320BDE9E5DB18FF7A4AE13F9BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9142A7833C34111B8FD00FC71D0A6AD /* Pods-CloudDefender_V1_VIPERUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8F2F81A432C69927B5DEF25689738799 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-CloudDefender_V1_VIPER";
+			target = 2454777C49CAA8047B0A2C71DFC3C720 /* Pods-CloudDefender_V1_VIPER */;
+			targetProxy = 042E5C6A8E51BB71E1AA4D791692A252 /* PBXContainerItemProxy */;
+		};
+		91F467BA881EEB99411CE64B0D45900B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-CloudDefender_V1_VIPER";
+			target = 2454777C49CAA8047B0A2C71DFC3C720 /* Pods-CloudDefender_V1_VIPER */;
+			targetProxy = 4C2D93C3722BE7594567838D9642F9FA /* PBXContainerItemProxy */;
+		};
+		C759B24A8A7CBDC222ED56E022712F51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OAuthSwift;
+			target = 85C745DF85EB0711CFCC6ACD6069E401 /* OAuthSwift */;
+			targetProxy = DCDF3596BC8E6523FC0EE0D09C934642 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3436806162BEFDC79ABE4FE4989A5371 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0074C36E4B2360642921EA07672E298 /* Pods-CloudDefender_V1_VIPERTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CloudDefender_V1_VIPERTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CloudDefender_V1_VIPERTests/Pods-CloudDefender_V1_VIPERTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3DDF1542D9F910327AC08B819524021B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1CA79BDEFB14ABC2A3D8284C0EF490D /* Pods-CloudDefender_V1_VIPER.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CloudDefender_V1_VIPER/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CloudDefender_V1_VIPER/Pods-CloudDefender_V1_VIPER.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5EB76E3CD5D41A1DE0698808A47D5980 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		84864B07266F77F1A46E4F63861FF1B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04E8AD65DCE68D6BDFA9E89893F70F26 /* Pods-CloudDefender_V1_VIPERTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CloudDefender_V1_VIPERTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CloudDefender_V1_VIPERTests/Pods-CloudDefender_V1_VIPERTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9D75473A2E01EE7597A57939CA18ACAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEDA9303FCBF8B42A8B5CF3C373721C6 /* Pods-CloudDefender_V1_VIPER.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CloudDefender_V1_VIPER/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CloudDefender_V1_VIPER/Pods-CloudDefender_V1_VIPER.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D37A539854CFC7CE215E7040917DEE9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC3ABA82B6252273CBC72820E783C666 /* OAuthSwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/OAuthSwift/OAuthSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OAuthSwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/OAuthSwift/OAuthSwift.modulemap";
+				PRODUCT_MODULE_NAME = OAuthSwift;
+				PRODUCT_NAME = OAuthSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E860562241D78B49CA8FF11B04C5BFD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC3ABA82B6252273CBC72820E783C666 /* OAuthSwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/OAuthSwift/OAuthSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OAuthSwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/OAuthSwift/OAuthSwift.modulemap";
+				PRODUCT_MODULE_NAME = OAuthSwift;
+				PRODUCT_NAME = OAuthSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F2D08CFC63FBA381E8E11358508530D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5130A931EDF4D791D445D12A4BE275F3 /* Pods-CloudDefender_V1_VIPERUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CloudDefender_V1_VIPERUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CloudDefender_V1_VIPERUITests/Pods-CloudDefender_V1_VIPERUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FC55FD287291EF272F8A8A1932676E3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99D397FB2396AB12AF2A7717FA22F924 /* Pods-CloudDefender_V1_VIPERUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CloudDefender_V1_VIPERUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CloudDefender_V1_VIPERUITests/Pods-CloudDefender_V1_VIPERUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FDEC9480D82A7F452943E1F6AC55EFD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDEC9480D82A7F452943E1F6AC55EFD3 /* Debug */,
+				5EB76E3CD5D41A1DE0698808A47D5980 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44892D584B5E20C81D846F7DEBF043D9 /* Build configuration list for PBXNativeTarget "Pods-CloudDefender_V1_VIPER" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DDF1542D9F910327AC08B819524021B /* Debug */,
+				9D75473A2E01EE7597A57939CA18ACAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8EA8BA82946C60619DA834BB77FBF5A /* Build configuration list for PBXNativeTarget "Pods-CloudDefender_V1_VIPERUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC55FD287291EF272F8A8A1932676E3C /* Debug */,
+				F2D08CFC63FBA381E8E11358508530D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9334CA54BB67AC53699E9BDDB2D3D3F /* Build configuration list for PBXNativeTarget "OAuthSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D37A539854CFC7CE215E7040917DEE9D /* Debug */,
+				E860562241D78B49CA8FF11B04C5BFD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F96DD98540AD93177E6C816C481783C3 /* Build configuration list for PBXNativeTarget "Pods-CloudDefender_V1_VIPERTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3436806162BEFDC79ABE4FE4989A5371 /* Debug */,
+				84864B07266F77F1A46E4F63861FF1B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

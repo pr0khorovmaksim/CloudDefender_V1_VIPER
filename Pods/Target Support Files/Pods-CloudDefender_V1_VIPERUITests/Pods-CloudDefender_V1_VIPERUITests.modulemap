@@ -1,0 +1,6 @@
+framework module Pods_CloudDefender_V1_VIPERUITests {
+  umbrella header "Pods-CloudDefender_V1_VIPERUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
