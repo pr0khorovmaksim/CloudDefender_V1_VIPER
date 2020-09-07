@@ -47,6 +47,7 @@ final class HomeAccessLevelAlertController: UIAlertController, UITableViewDataSo
     }
     
     @objc func switchChangedCreate(mySwitch: UISwitch) {
+        
         if mySwitch.isOn == true{
             createValue = true
         }else{
@@ -55,6 +56,7 @@ final class HomeAccessLevelAlertController: UIAlertController, UITableViewDataSo
     }
     
     @objc func switchChangedRead(mySwitch: UISwitch) {
+        
         if mySwitch.isOn == true{
             readValue = true
         }else{
@@ -63,6 +65,7 @@ final class HomeAccessLevelAlertController: UIAlertController, UITableViewDataSo
     }
     
     @objc func switchChangedDelete(mySwitch: UISwitch) {
+        
         if mySwitch.isOn == true{
             deleteValue = true
         }else{
@@ -71,6 +74,7 @@ final class HomeAccessLevelAlertController: UIAlertController, UITableViewDataSo
     }
     
     @objc func switchChangedOwner(mySwitch: UISwitch) {
+        
         if mySwitch.isOn == true{
             ownerValue = true
         }else{
@@ -79,6 +83,7 @@ final class HomeAccessLevelAlertController: UIAlertController, UITableViewDataSo
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell")!
         
         createValue  = false

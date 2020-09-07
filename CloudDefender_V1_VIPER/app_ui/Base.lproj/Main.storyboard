@@ -170,7 +170,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dhm-LD-pVD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1828.985507246377" y="129.91071428571428"/>
+            <point key="canvasLocation" x="1716" y="130"/>
         </scene>
         <!--File View Controller-->
         <scene sceneID="9cw-ao-2fo">
@@ -186,7 +186,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z89-DN-SNt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2602.898550724638" y="121.875"/>
+            <point key="canvasLocation" x="2526" y="130"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="2r6-eY-pPq">
