@@ -8,9 +8,8 @@ You need a Google-account to work with the application.
 
 **The user can perform the following actions with the cloud storage:**
 
-* Creation and removal of a folder with its contents by the user;
-* Uploading and downloading the file by the user from the server;
-* Delete, update files;
+* Creation and removal of a folder with its contents;
+* Uploading, downloading, updating, deleting a file from the server;
 * Sharing access to a folder by one user to another.
 
 **The mobile application supports the following file types:**
@@ -42,7 +41,7 @@ You need to do the following:
 * Enter the folder name and click on "Share".
 <img width="200" alt="Folder" src="https://user-images.githubusercontent.com/39344407/92372742-0be6e300-f106-11ea-9646-7763df5ecfe6.png">
 
-**When you long press on the folder, you will see the following pop-up window:**
+**When you long press on the file, you will see the following pop-up window:**
 
 <img width="200" alt="Folder" src="https://user-images.githubusercontent.com/39344407/92373770-806e5180-f107-11ea-9a5f-dbfa7824548d.png">
 
