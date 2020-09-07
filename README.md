@@ -29,8 +29,6 @@ You need to do the following:
 * In the pop-up window, select "New folder";
 * Enter the folder name and click on "Create".
 
-<img width="200" alt="Folder" src="https://user-images.githubusercontent.com/39344407/92371890-e2798780-f104-11ea-97fb-4d2d25f54b49.png">
-
 **How do I share access to a folder with another user?**
 
 You need to do the following:
@@ -52,4 +50,4 @@ You need to do the following:
 * In the pop-up window, select "Upload file to cloud";
 * Select where you want to download the file;
 * And select the file you want to download.
-<img width="200" alt="Folder" src="https://user-images.githubusercontent.com/39344407/92373367-e3131d80-f106-11ea-8d2b-eea694820190.png">
+
