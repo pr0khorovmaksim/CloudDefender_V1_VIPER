@@ -21,7 +21,7 @@ You need a Google-account to work with the application.
 
 **When you long press on the folder, you will see the following pop-up window:**
 
-<img width="300" alt="Folder" src="https://user-images.githubusercontent.com/39344407/92372359-7d726180-f105-11ea-92ae-be0db41f5b19.png">
+<img width="200" alt="Folder" src="https://user-images.githubusercontent.com/39344407/92372359-7d726180-f105-11ea-92ae-be0db41f5b19.png">
 
 **How do I create a folder?**
 
@@ -30,7 +30,7 @@ You need to do the following:
 * In the pop-up window, select "New folder";
 * Enter the folder name and click on "Create".
 
-<img width="300" alt="Folder" src="https://user-images.githubusercontent.com/39344407/92371890-e2798780-f104-11ea-97fb-4d2d25f54b49.png">
+<img width="200" alt="Folder" src="https://user-images.githubusercontent.com/39344407/92371890-e2798780-f104-11ea-97fb-4d2d25f54b49.png">
 
 **How do I share access to a folder with another user?**
 
@@ -40,11 +40,11 @@ You need to do the following:
 * Select the level of access to the folder (Create, Read, Delete, Full)";
 * Enter the last name and postal address of another user;
 * Enter the folder name and click on "Share".
-<img width="300" alt="Folder" src="https://user-images.githubusercontent.com/39344407/92372742-0be6e300-f106-11ea-9646-7763df5ecfe6.png">
+<img width="200" alt="Folder" src="https://user-images.githubusercontent.com/39344407/92372742-0be6e300-f106-11ea-9646-7763df5ecfe6.png">
 
 **When you long press on the folder, you will see the following pop-up window:**
 
-<img width="300" alt="Folder" src="https://user-images.githubusercontent.com/39344407/92373770-806e5180-f107-11ea-9a5f-dbfa7824548d.png">
+<img width="200" alt="Folder" src="https://user-images.githubusercontent.com/39344407/92373770-806e5180-f107-11ea-9a5f-dbfa7824548d.png">
 
 **How do I upload a file to cloud storage?**
 
@@ -53,4 +53,4 @@ You need to do the following:
 * In the pop-up window, select "Upload file to cloud";
 * Select where you want to download the file;
 * And select the file you want to download.
-<img width="300" alt="Folder" src="https://user-images.githubusercontent.com/39344407/92373367-e3131d80-f106-11ea-8d2b-eea694820190.png">
+<img width="200" alt="Folder" src="https://user-images.githubusercontent.com/39344407/92373367-e3131d80-f106-11ea-8d2b-eea694820190.png">
