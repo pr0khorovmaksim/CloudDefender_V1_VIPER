@@ -214,7 +214,7 @@ extension HomeCollectionViewController : PresenterToHomeViewProtocol{
         switch whois {
         case "deleteFolder":
             self.foldersItem?.folder.folders.remove(at: indexForLongPress)
-            //folderId = UserDefaults.standard.stringArray(forKey: "lastFolderIdArray")?.last
+            folderId = UserDefaults.standard.stringArray(forKey: "lastFolderIdArray")?.last
         case "deleteFile":
             self.foldersItem?.folder.files.remove(at: indexForLongPress)
         default:
