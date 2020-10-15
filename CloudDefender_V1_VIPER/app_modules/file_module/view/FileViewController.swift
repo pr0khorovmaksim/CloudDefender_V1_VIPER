@@ -47,14 +47,14 @@ extension FileViewController : PresenterToFileViewProtocol{
         }
     }
     
-    func image(fileURL : URL, fileName : String){
+    private func image(fileURL : URL, fileName : String){
         let data = try? Data(contentsOf: fileURL)
         navigationItem.title = "\(fileName.lowercased())"
         view.backgroundColor = .white
         view.addBackground(imageData : data!)
     }
     
-    func video(fileURL : URL, fileName : String, fileType : String){
+    private func video(fileURL : URL, fileName : String, fileType : String){
         view.backgroundColor = .black
         navigationItem.title = "\(fileName.lowercased())"
         videoPlayer = AVPlayer(url: fileURL)
@@ -72,7 +72,7 @@ extension FileViewController : PresenterToFileViewProtocol{
         }
     }
     
-    func document(fileURL : URL, fileName : String, fileType : String){
+    private func document(fileURL : URL, fileName : String, fileType : String){
         
         let webView: WKWebView!
         
@@ -87,7 +87,7 @@ extension FileViewController : PresenterToFileViewProtocol{
         }
     }
     
-    func audio(fileURL : URL, fileName : String, fileType : String){
+    private func audio(fileURL : URL, fileName : String, fileType : String){
         view.backgroundColor = .white
         navigationItem.title = "\(fileName.lowercased())"
         startAudio.setImage(UIImage(named: "startPlayer_icon"), for: .normal)
@@ -113,13 +113,13 @@ extension FileViewController : PresenterToFileViewProtocol{
         audioPlayer.play()
     }
     
-    @objc func startAction()  {
+    @objc private func startAction()  {
         audioPlayer.play()
         stopAudio.alpha = 1
         startAudio.alpha = 0
     }
     
-    @objc func stopAction()  {
+    @objc private func stopAction()  {
         audioPlayer.stop()
         stopAudio.alpha = 0
         startAudio.alpha = 1
@@ -135,14 +135,14 @@ extension FileViewController : PresenterToFileViewProtocol{
         }
     }
     
-    func errorAlert(errorMessage : String){
+    private func errorAlert(errorMessage : String){
         
         let alert = UIAlertController(title: "Ошибка!", message: "\(errorMessage)", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "ОК", style: .default, handler: nil))
         self.present(alert, animated: true)
     }
     
-    func clearCache(){
+    private func clearCache(){
         let cacheURL =  FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask).first!
         let fileManager = FileManager.default
         do {

@@ -32,14 +32,14 @@ final class HomeRouter : PresenterToHomeRouterProtocol{
         return UIStoryboard(name: "Main", bundle: Bundle.main)
     }
     
-    func showFileViewController(navigationController : UINavigationController, fileURL : URL, fileName : String, fileType : String) {
+    func showFileViewController(navigationController : UINavigationController?, fileURL : URL?, fileName : String?, fileType : String?) {
         
-        let fileModule = FileRouter.createFileModule(fileURL: fileURL, fileName : fileName, fileType : fileType)
-        navigationController.pushViewController(fileModule, animated: true)
+        let fileModule = FileRouter.createFileModule(fileURL: fileURL!, fileName : fileName!, fileType : fileType!)
+        navigationController?.pushViewController(fileModule, animated: true)
     }
     
-    func showSignViewController(navigationController : UINavigationController){
+    func showSignViewController(navigationController : UINavigationController?){
         let signModule = SignRouter.createSignModule()
-        navigationController.pushViewController(signModule, animated: true)
+        navigationController?.pushViewController(signModule, animated: true)
     }
 }

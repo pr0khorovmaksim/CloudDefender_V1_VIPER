@@ -8,8 +8,6 @@
 
 import UIKit
 
-private let reuseIdentifier = "Cell"
-
 final class HomeCollectionViewController: UICollectionViewController {
     
     var presenter : ViewToHomePresenterProtocol?
@@ -29,7 +27,7 @@ final class HomeCollectionViewController: UICollectionViewController {
     @IBOutlet weak var addOutlet: UIBarButtonItem!
     @IBOutlet weak var settingsOutlet: UIBarButtonItem!
     
-    fileprivate let activityView = UIActivityIndicatorView(style: .large)
+    let activityView = UIActivityIndicatorView(style: .large)
     
     override func viewWillAppear(_ animated: Bool) {
         activityView.stopAnimating()
@@ -69,12 +67,12 @@ final class HomeCollectionViewController: UICollectionViewController {
         
     }
     
-    @objc func updateData(refreshControl: UIRefreshControl) {
+    @objc private func updateData(refreshControl: UIRefreshControl) {
         presenter?.fetchFolders(folderId : folderId!, userId: userId!)
         refreshControl.endRefreshing()
     }
     
-    @objc func longPressed(sender: UILongPressGestureRecognizer)
+    @objc private func longPressed(sender: UILongPressGestureRecognizer)
     {
         if sender.state == UIGestureRecognizer.State.ended {
             return
@@ -86,14 +84,14 @@ final class HomeCollectionViewController: UICollectionViewController {
             if let index = indexPath {
                 indexForLongPress = index.row
                 if indexPath?.section == 0{
-                    let folderName = foldersItem?.folder.folders[indexForLongPress].folderName
-                    folderId = foldersItem?.folder.folders[indexForLongPress].folderId
+                    let folderName = foldersItem?.folder?.folders?[indexForLongPress].folderName
+                    folderId = foldersItem?.folder?.folders?[indexForLongPress].folderId
                     FolderLongPressed(folderName: "\(folderName!)", folderId: "\(folderId!)", folderIndex: indexForLongPress)
                     
                 }
                 if indexPath?.section == 1{
-                    let fileName = foldersItem?.folder.files[indexForLongPress].fileName
-                    fileId = foldersItem?.folder.files[indexForLongPress].fileId
+                    let fileName = foldersItem?.folder?.files?[indexForLongPress].fileName
+                    fileId = foldersItem?.folder?.files?[indexForLongPress].fileId
                     FileLongPressed(fileName: "\(fileName!)", fileId: "\(fileId!)", fileIndex: indexForLongPress)
                 }
             } else {
@@ -113,27 +111,21 @@ final class HomeCollectionViewController: UICollectionViewController {
         AddAlert()
     }
     
-    func showActivityIndicatory() {
-        activityView.alpha = 1
-        activityView.center = self.view.center
-        self.view.addSubview(activityView)
-        activityView.startAnimating()
-    }
-    
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        if indexPath.section == 0{
+        switch indexPath.section {
+        case 0:
             presenter?.didselectFolder(folderIndex: indexPath.row)
             indexForLongPress = indexPath.row
             backOutlet.alpha = 1
-        }
-        if indexPath.section == 1{
-            
+        case 1:
             if check == false{
                 check = true
                 presenter?.didselectFile(fileIndex: indexPath.row, navigationController : navigationController!)
                 showActivityIndicatory()
             }
+        default:
+            return
         }
     }
     
@@ -143,97 +135,110 @@ final class HomeCollectionViewController: UICollectionViewController {
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-        var returnValue = Int()
-        let folderCount = foldersItem?.folder.folders.count
-        let fileCount = foldersItem?.folder.files.count
-        
-        if section == 0 && folderCount != 0{
-            returnValue = folderCount ?? 0
-            
-            return returnValue
+        switch section {
+        case 0:
+            guard let folderCount = foldersItem?.folder?.folders?.count else { return 0 }
+            return folderCount
+        case 1:
+            guard let fileCount = foldersItem?.folder?.files?.count else { return 0 }
+            return fileCount
+        default:
+            return 0
         }
-        if section == 1 && fileCount != 0{
-            returnValue = fileCount ?? 0
-            
-            return returnValue
-        }
-        return returnValue
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! HomeCollectionViewCell
         
-        if indexPath.section == 0{
-            cell.folderNameLabel.text = foldersItem?.folder.folders[indexPath.row].folderName//?.folder.folderName
+        switch indexPath.section {
+        case 0:
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! HomeCollectionViewCell
+            cell.folderNameLabel.text = foldersItem?.folder?.folders?[indexPath.row].folderName
             return cell
-        }
-        if indexPath.section == 1{
-            let cell2 = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell2", for: indexPath) as! HomeCollectionViewCell2
-            let str = foldersItem?.folder.files[indexPath.row].fileName!.lowercased()
+        case 1:
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell2", for: indexPath) as! HomeCollectionViewCell2
+            let str = foldersItem?.folder?.files?[indexPath.row].fileName!.lowercased()
             let nsString = str! as NSString
             
             if nsString.length > 0
             {
-                cell2.fileNameLabel.text = nsString.substring(with: NSRange(location: 0, length: nsString.length > 30 ? 30 : nsString.length))
+                cell.fileNameLabel.text = nsString.substring(with: NSRange(location: 0, length: nsString.length > 30 ? 30 : nsString.length))
             }
-            if (foldersItem?.folder.files[indexPath.row].fileName!.lowercased().contains("."))!{
+            if (foldersItem?.folder?.files?[indexPath.row].fileName!.lowercased().contains("."))!{
                 
-                switch foldersItem?.folder.files[indexPath.row].fileName!.lowercased().components(separatedBy: ".")[1]{
-                    
+                switch foldersItem?.folder?.files?[indexPath.row].fileName!.lowercased().components(separatedBy: ".")[1]{
+                
                 case "png", "heic", "webp", "bmp", "gif", "jpe", "jpeg", "jpg", "svg", "tif", "tiff":
-                    cell2.fileImage.image = UIImage(named: "file_image_icon")
+                    cell.fileImage.image = UIImage(named: "file_image_icon")
                 case "webm","mp2","mpa","mpe","mpeg","mpg","mpv2","qt","mov","movie","flv","mp4","ts","3gp","3gpp","3gp2","3gpp2","avi","wmv":
-                    cell2.fileImage.image = UIImage(named: "file_video_icon")
+                    cell.fileImage.image = UIImage(named: "file_video_icon")
                 case "pdf","doc","dot","docx","dotx","docm","dotm","xls","xlt","xla","xlsx","xltx","xltm","xlam","xlsb","ppt","pot","pps","ppa","pptx","potx","ppsx","ppam","pptm","potm","ppsm","mdb":
-                    cell2.fileImage.image = UIImage(named: "file_document_icon")
+                    cell.fileImage.image = UIImage(named: "file_document_icon")
                 case "wma","mp3","m4a","ogg","wav":
-                    cell2.fileImage.image = UIImage(named: "file_audio_icon")
+                    cell.fileImage.image = UIImage(named: "file_audio_icon")
                 default:
-                    cell2.fileImage.image = UIImage(named: "file_icon")
+                    cell.fileImage.image = UIImage(named: "file_icon")
                 }
             }else{
                 
             }
-            return cell2
+            return cell
+        default:
+            return UICollectionViewCell()
         }
-        return cell
     }
 }
 
 extension HomeCollectionViewController : PresenterToHomeViewProtocol{
     
-    func showErrorAlert(errorMessage: String) {
-        errorAlert(errorMessage : errorMessage)
-        activityView.stopAnimating()
+    func showErrorAlert(errorMessage: String?) {
+        guard let errorMessage = errorMessage else { return }
+        alert(alertTitle: "Ошибка!", alertMessage: "\(errorMessage)")
+        DispatchQueue.main.async { [self] in
+            activityView.stopAnimating()
+        }
     }
     
-    func showSuccessAlert(successMessage: String, whois : String) {
-        successAlert(successMessage : successMessage)
-        activityView.stopAnimating()
+    func showSuccessAlert(successMessage: String?, whois : String?) {
+        guard let successMessage = successMessage else { return }
+        alert(alertTitle: "Успех!", alertMessage: "\(successMessage)")
+        DispatchQueue.main.async { [self] in
+            activityView.stopAnimating()
+        }
         
         switch whois {
         case "deleteFolder":
-            self.foldersItem?.folder.folders.remove(at: indexForLongPress)
+            self.foldersItem?.folder?.folders?.remove(at: indexForLongPress)
             folderId = UserDefaults.standard.stringArray(forKey: "lastFolderIdArray")?.last
         case "deleteFile":
-            self.foldersItem?.folder.files.remove(at: indexForLongPress)
+            self.foldersItem?.folder?.files?.remove(at: indexForLongPress)
         default:
-            print("")
+            return
         }
-        self.collectionView.reloadData()
+        
+        DispatchQueue.main.async { [self] in
+            self.collectionView.reloadData()
+        }
     }
     
-    func showFolders(folders : Folder) {
+    func showFolders(folders : Folder?) {
         foldersItem = folders
-        self.navigationItem.title = foldersItem?.folder.folderName
-        folderId = foldersItem!.folder.folderId
-        self.collectionView.reloadData()
-        activityView.stopAnimating()
-        if foldersItem?.folder.folderName == "root"{
-            backOutlet.alpha = 0
+        folderId = foldersItem!.folder?.folderId
+        DispatchQueue.main.async { [self] in
+            navigationItem.title = foldersItem?.folder?.folderName
+            collectionView.reloadData()
+            activityView.stopAnimating()
         }
-        if  UserDefaults.standard.stringArray(forKey: "lastFolderIdArray")?.count != 0 && foldersItem?.folder.folderName != "root"{
-            backOutlet.alpha = 1
+        
+        if foldersItem?.folder?.folderName == "root"{
+            DispatchQueue.main.async { [self] in
+                backOutlet.alpha = 0
+            }
+        }
+        
+        if  UserDefaults.standard.stringArray(forKey: "lastFolderIdArray")?.count != 0 && foldersItem?.folder?.folderName != "root"{
+            DispatchQueue.main.async { [self] in
+                backOutlet.alpha = 1
+            }
         }
     }
 }

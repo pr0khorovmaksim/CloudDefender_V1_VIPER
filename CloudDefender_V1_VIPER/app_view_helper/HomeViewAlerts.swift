@@ -84,7 +84,7 @@ extension HomeCollectionViewController  {
                             self.presenter?.shareFolder(folderId: folderId, folderName : folderName, userName: userName, userEmail: userEmail, accessLevel: SummLevel)
                             self.showActivityIndicatory()
                         } else {
-                            self.errorAlert(errorMessage: "Ошибка: Вы не заполнили поля")
+                            self.alert(alertTitle: "Ошибка!", alertMessage: "Вы не заполнили поля")
                         }
                     }
                     
@@ -110,7 +110,7 @@ extension HomeCollectionViewController  {
         alert.addAction(UIAlertAction(title: "Владельцы папки", style: UIAlertAction.Style.default, handler:
             
             { action in
-                var owners = self.foldersItem?.folder.owners
+                var owners = self.foldersItem?.folder?.owners
                 if owners?.count == 0{
                     owners?.append("\(self.userName!)")
                 }
@@ -237,7 +237,7 @@ extension HomeCollectionViewController  {
                         self.presenter?.createFolder(folderId: self.folderId ?? "00000000-0000-0000-0000-000000000000", newFolderName: newFolderName)
                         self.showActivityIndicatory()
                     } else {
-                        self.errorAlert(errorMessage: "Ошибка: Вы не ввели название папки")
+                        self.alert(alertTitle: "Ошибка!", alertMessage: "Вы не ввели название папки")
                     }
                 }
                 alert.addTextField { (textField) in
@@ -250,7 +250,7 @@ extension HomeCollectionViewController  {
                 self.present(alert, animated: true, completion: nil)
         }))
         
-        if foldersItem?.folder.folderName == "root"{
+        if foldersItem?.folder?.folderName == "root"{
         }else{
             alert.addAction(UIAlertAction(title: "Загрузить файл в облако", style: UIAlertAction.Style.default, handler:
                 { action in
@@ -294,16 +294,16 @@ extension HomeCollectionViewController  {
         self.present(alert, animated: true)
     }
     
-    func errorAlert(errorMessage : String){
-        
-        let alert = UIAlertController(title: "Ошибка!", message: "\(errorMessage)",preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "ОК", style: .default, handler: nil))
-        self.present(alert, animated: true)
+    func showActivityIndicatory() {
+        activityView.alpha = 1
+        activityView.center = self.view.center
+        self.view.addSubview(activityView)
+        activityView.startAnimating()
     }
     
-    func successAlert(successMessage : String){
-        
-        let alert = UIAlertController(title: "Успех!", message: "\(successMessage)", preferredStyle: .alert)
+    func alert(alertTitle : String?, alertMessage : String?){
+
+        let alert = UIAlertController(title: alertTitle, message: alertMessage, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "ОК", style: .default, handler: nil))
         self.present(alert, animated: true)
     }

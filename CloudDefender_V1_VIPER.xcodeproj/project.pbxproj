@@ -37,6 +37,7 @@
 		B568A88A24D591C500A4BA6C /* NetworkDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568A88924D591C500A4BA6C /* NetworkDataFetcher.swift */; };
 		B568A88C24D59B9200A4BA6C /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568A88B24D59B9200A4BA6C /* HomeCollectionViewCell.swift */; };
 		B568A89224D5DB7000A4BA6C /* HomeCollectionViewCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568A89124D5DB7000A4BA6C /* HomeCollectionViewCell2.swift */; };
+		B577EEF12531070E00555A5E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B577EEF02531070E00555A5E /* Constants.swift */; };
 		B5787EDB24F3CFA400C7C335 /* FileProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5787EDA24F3CFA400C7C335 /* FileProtocols.swift */; };
 		B5787EDD24F3CFB400C7C335 /* FileEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5787EDC24F3CFB400C7C335 /* FileEntity.swift */; };
 		B5787EDF24F3CFC600C7C335 /* FileInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5787EDE24F3CFC600C7C335 /* FileInteractor.swift */; };
@@ -106,6 +107,7 @@
 		B568A88924D591C500A4BA6C /* NetworkDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetcher.swift; sourceTree = "<group>"; };
 		B568A88B24D59B9200A4BA6C /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		B568A89124D5DB7000A4BA6C /* HomeCollectionViewCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell2.swift; sourceTree = "<group>"; };
+		B577EEF02531070E00555A5E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B5787EDA24F3CFA400C7C335 /* FileProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileProtocols.swift; sourceTree = "<group>"; };
 		B5787EDC24F3CFB400C7C335 /* FileEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileEntity.swift; sourceTree = "<group>"; };
 		B5787EDE24F3CFC600C7C335 /* FileInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileInteractor.swift; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 		B568A81F24D4148A00A4BA6C /* CloudDefender_V1_VIPER */ = {
 			isa = PBXGroup;
 			children = (
+				B577EEEF253106F900555A5E /* Constants */,
 				B568A85324D414B600A4BA6C /* app_settings */,
 				B568A85424D414C400A4BA6C /* app_modules */,
 				B568A87D24D4626900A4BA6C /* app_api */,
@@ -391,6 +394,14 @@
 			path = app_view_helper;
 			sourceTree = "<group>";
 		};
+		B577EEEF253106F900555A5E /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				B577EEF02531070E00555A5E /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		B5787ED324F3CF4600C7C335 /* file_module */ = {
 			isa = PBXGroup;
 			children = (
@@ -532,7 +543,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1160;
-				LastUpgradeCheck = 1160;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = maksim;
 				TargetAttributes = {
 					B568A81C24D4148A00A4BA6C = {
@@ -684,6 +695,7 @@
 				B568A86624D415B800A4BA6C /* SignEntity.swift in Sources */,
 				B5787EE424F3CFE100C7C335 /* FilePresenter.swift in Sources */,
 				B558BDA424EAF75100AA4626 /* HomeViewAlerts.swift in Sources */,
+				B577EEF12531070E00555A5E /* Constants.swift in Sources */,
 				B568A82524D4148A00A4BA6C /* SignViewController.swift in Sources */,
 				B5787EE624F3D00A00C7C335 /* FileViewController.swift in Sources */,
 				B568A87C24D460A400A4BA6C /* HomeCollectionViewController.swift in Sources */,
@@ -785,6 +797,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -845,6 +858,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;

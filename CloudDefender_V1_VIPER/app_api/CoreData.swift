@@ -12,7 +12,8 @@ import UIKit
 
 final class CoreData{
     
-    func saveUserData(userId: String, userName : String, userEmail : String, whois : String){
+    func saveUserData(userId: String?, userName : String?, userEmail : String?, whois : String?){
+        
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let context = appDelegate.persistentContainer.viewContext
         if whois == "User"{
@@ -67,7 +68,6 @@ final class CoreData{
         let context = appDelegate.persistentContainer.viewContext
         let fetchRequest : NSFetchRequest<AuthorizedUser> = AuthorizedUser.fetchRequest()
         let count = try! context.count(for: fetchRequest)
-        
         return count
     }
     

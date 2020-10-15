@@ -10,9 +10,14 @@ import Foundation
 
 final class NetworkDataFetcher {
     
-    fileprivate let networkService = NetworkService()
+    fileprivate let networkService : NetworkService = NetworkService()
+    fileprivate let constants : Constants = Constants()
     
-    func fetchFolders(urlString: String, userId : String, httpMethod : String, parameters : [String : Any], response: @escaping (Folder?) -> Void) {
+    func fetchFolders(folderId: String?, userId : String?, parameters : [String : Any]?, response: @escaping (Folder?) -> Void) {
+        
+        let urlString = constants.urlFolders + folderId!
+        let httpMethod = constants.get
+        
         networkService.request(urlString: urlString, userId : userId, httpMethod : httpMethod, parameters : parameters ) { (result) in
             switch result {
             case .success(let data):
@@ -30,7 +35,31 @@ final class NetworkDataFetcher {
         }
     }
     
-    func fetch(urlString: String, userId : String, httpMethod : String, parameters : [String : Any], response: @escaping (Data?) -> Void) {
+    func fetch(userId : String?, pathId : String?, whois : String?, parameters : [String : Any]?, response: @escaping (Data?) -> Void) {
+        
+        let httpMethod : String?
+        let urlString : String?
+        
+        switch whois{
+        case "deleteFolder":
+            urlString = constants.urlFolders + pathId!
+            httpMethod = constants.delete
+        case "createFolder":
+            urlString = constants.urlFolders
+            httpMethod = constants.post
+        case "shareFolder":
+            urlString = constants.urlFolders
+            httpMethod = constants.patch
+        case "downloadFile":
+            urlString = constants.urlFiles + pathId!
+            httpMethod = constants.get
+        case "deleteFile":
+            urlString = constants.urlFiles + pathId!
+            httpMethod = constants.delete
+        default :
+            return
+        }
+        
         networkService.request(urlString: urlString, userId: userId, httpMethod: httpMethod, parameters : parameters){ (result) in
             switch result {
             case .success(let data):
@@ -42,7 +71,21 @@ final class NetworkDataFetcher {
         }
     }
     
-    func fetchUploadFile(urlString: String, userId : String, fileName : String, httpMethod: String, mime : String, data : Data, parameters : [[String : Any]], response: @escaping (Data?) -> Void) {
+    func fetchUploadFile(userId : String?, fileName : String?, mime : String?, data : Data?, parameters : [[String : Any]]?, response: @escaping (Data?) -> Void) {
+        
+        let urlString = constants.urlFiles
+        let httpMethod : String
+        
+        switch parameters!.count{
+        
+        case 2 :
+            httpMethod = constants.post
+        case 3 :
+            httpMethod = constants.put
+        default :
+            httpMethod = constants.post
+        }
+        
         networkService.requestFileUpload(urlString: urlString, userId: userId, fileName: fileName, httpMethod: httpMethod, mime: mime, data: data, parameters: parameters){ (result) in
             switch result {
             case .success(let data):
@@ -54,7 +97,11 @@ final class NetworkDataFetcher {
         }
     }
     
-    func fetchRegister(urlString: String, httpMethod: String, parameters : [String : Any], response: @escaping (Data?) -> Void) {
+    func fetchRegister(parameters : [String : Any]?, response: @escaping (Data?) -> Void) {
+        
+        let urlString = constants.urlRegister
+        let httpMethod = constants.post
+        
         networkService.requestRegister(urlString: urlString, httpMethod: httpMethod, parameters: parameters){ (result) in
             
             switch result {

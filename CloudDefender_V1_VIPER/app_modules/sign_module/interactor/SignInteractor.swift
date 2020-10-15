@@ -15,20 +15,20 @@ final class SignInteractor : PresenterToSignInteractorProtocol{
     var presenter: InteractorToSignPresenterProtocol?
     
     fileprivate var coreData : CoreData = CoreData()
-    fileprivate let networkDataFetcher = NetworkDataFetcher()
+    fileprivate let networkDataFetcher : NetworkDataFetcher = NetworkDataFetcher()
     
     fileprivate var userName : String?
     fileprivate var userEmail : String?
     fileprivate var isRegisterSuccess: Bool?
     fileprivate var isOAuthSuccess: Bool?
-    fileprivate var oauthswift: OAuth2Swift?
+    fileprivate var oauthswift : OAuth2Swift?
     
     fileprivate let serialQueue = DispatchQueue(label: "com.self.serialGCD")
-    fileprivate let serialQueue2 = DispatchQueue(label: "swiftlee.serial.queue")
+    fileprivate let serialQueue2 = DispatchQueue(label: "swift.serial.queue")
     fileprivate let group = DispatchGroup()
     fileprivate let group2 = DispatchGroup()
     
-    func oAuthSwift(navigationController : UINavigationController){
+    func oAuthSwift(navigationController : UINavigationController?){
         let count = coreData.countAuthorizedUser()
         if count == 0{
             group2.enter()
@@ -47,7 +47,7 @@ final class SignInteractor : PresenterToSignInteractorProtocol{
         }
     }
     
-    func OAuth(){
+    private func OAuth(){
         let oauthswift = OAuth2Swift(
             consumerKey: "831609926475-cmut9eherrh7no21adgiluco39k0df0i.apps.googleusercontent.com",
             consumerSecret: "",
@@ -96,12 +96,11 @@ final class SignInteractor : PresenterToSignInteractorProtocol{
         })
     }
     
-    func register(userName : String, userEmail : String){
+    private func register(userName : String, userEmail : String){
         
-        let parameters = ["username":"\(userName)","email":"\(userEmail)"]
-        let url = "https://romansuvorov.ru/clouddefender/auth/register"
+        let parameters : [String: Any]  = ["username":"\(userName)","email":"\(userEmail)"]
         
-        self.networkDataFetcher.fetchRegister(urlString: url, httpMethod: "POST", parameters: parameters) { (response) in
+        self.networkDataFetcher.fetchRegister(parameters: parameters) { (response) in
             guard let response = response else { return }
             
             let responseString = String(data: response, encoding: .utf8)

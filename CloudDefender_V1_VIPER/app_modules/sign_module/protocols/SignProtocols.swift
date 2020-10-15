@@ -15,7 +15,7 @@ protocol ViewToSignPresenterProtocol : class{
     var router : PresenterToSignRouterProtocol? { get set }
     var interactor : PresenterToSignInteractorProtocol? { get set }
     
-    func SignIn(navigationController : UINavigationController)
+    func SignIn(navigationController : UINavigationController?)
 }
 
 protocol PresenterToSignViewProtocol : class{
@@ -25,15 +25,15 @@ protocol PresenterToSignViewProtocol : class{
 protocol PresenterToSignRouterProtocol : class{
     
     static func createSignModule()-> SignViewController
-    func showHomeViewController(navigationController : UINavigationController)
+    func showHomeViewController(navigationController : UINavigationController?)
 }
 
 protocol PresenterToSignInteractorProtocol : class{
     
     var presenter : InteractorToSignPresenterProtocol? { get set }
-    func oAuthSwift(navigationController: UINavigationController)
+    func oAuthSwift(navigationController: UINavigationController?)
 }
 
 protocol InteractorToSignPresenterProtocol : class{
-    func goToHome(navigationController: UINavigationController)
+    func goToHome(navigationController: UINavigationController?)
 }

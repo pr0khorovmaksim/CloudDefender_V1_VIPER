@@ -81,7 +81,7 @@ extension HomeCollectionViewController: UIImagePickerControllerDelegate, UINavig
             }
         }
         catch (let error) {
-            errorAlert(errorMessage: "Ошибка: \(error)")
+            alert(alertTitle: "Ошибка!", alertMessage: "\(error)")
         }
     }
     public func documentMenu(_ documentMenu: UIDocumentPickerViewController, didPickDocumentPicker documentPicker: UIDocumentPickerViewController) {

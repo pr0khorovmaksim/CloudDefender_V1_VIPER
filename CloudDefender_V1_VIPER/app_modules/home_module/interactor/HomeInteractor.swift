@@ -13,7 +13,7 @@ final class HomeInteractor : PresenterToHomeInteractorProtocol{
     
     var presenter: InteractorToHomePresenterProtocol?
     
-    fileprivate let networkDataFetcher = NetworkDataFetcher()
+    fileprivate let networkDataFetcher : NetworkDataFetcher = NetworkDataFetcher()
     fileprivate let coreData : CoreData = CoreData()
     
     fileprivate var folderResponse: Folder?
@@ -22,17 +22,17 @@ final class HomeInteractor : PresenterToHomeInteractorProtocol{
     fileprivate var lastFolderName = [String]()
     fileprivate var userId : String? = nil
     
-    func getFoldersRequest(folderId : String, direction : String, userId : String) {
+    func getFoldersRequest(folderId : String?, direction : String?, userId : String?) {
         
-        let url = "https://romansuvorov.ru/clouddefender/folders/\(folderId)"
-        self.networkDataFetcher.fetchFolders(urlString: url, userId : userId, httpMethod: "GET", parameters: [:]) { (folderResponse) in
+        guard let folderId = folderId, let userId = userId else { return }
+        networkDataFetcher.fetchFolders(folderId: folderId, userId : userId, parameters: [:]) { (folderResponse) in
             guard let folderResponse = folderResponse else { return }
             self.folderResponse = folderResponse
             if direction == "forward"{
-                if self.lastFolderId.contains(where: {$0 == "\((self.folderResponse?.folder.folderId)!)"}) {
+                if self.lastFolderId.contains(where: {$0 == "\((self.folderResponse?.folder?.folderId)!)"}) {
                 } else {
-                    self.lastFolderId.append((self.folderResponse?.folder.folderId)!)
-                    self.lastFolderName.append((self.folderResponse?.folder.folderName)!)
+                    self.lastFolderId.append((self.folderResponse?.folder?.folderId)!)
+                    self.lastFolderName.append((self.folderResponse?.folder?.folderName)!)
                     if self.lastFolderId.count == 1 && self.lastFolderId.last != "00000000-0000-0000-0000-000000000000"{
                         
                     }else{
@@ -46,7 +46,7 @@ final class HomeInteractor : PresenterToHomeInteractorProtocol{
         }
     }
     
-    func forwardGetFoldersRequest(folderId : String, userId : String){
+    func forwardGetFoldersRequest(folderId : String?, userId : String?){
         
         self.userId = userId
         Reachability.isConnectedToNetwork{ (isConnected) in
@@ -66,7 +66,7 @@ final class HomeInteractor : PresenterToHomeInteractorProtocol{
         }
     }
     
-    func backGetFoldersRequest(folderId : String, userId : String){
+    func backGetFoldersRequest(folderId : String?, userId : String?){
         
         Reachability.isConnectedToNetwork { (isConnected) in
             if isConnected {
@@ -126,10 +126,11 @@ final class HomeInteractor : PresenterToHomeInteractorProtocol{
         }
     }
     
-    func deleteFolderRequest(folderId : String, folderName : String) {
+    func deleteFolderRequest(folderId : String?, folderName : String?) {
         
-        let url = "https://romansuvorov.ru/clouddefender/folders/\(folderId)"
-        self.networkDataFetcher.fetch(urlString: url, userId: userId!, httpMethod: "DELETE", parameters : [:])
+        let whois = "deleteFolder"
+        guard let folderId = folderId, let folderName = folderName, let userId = userId else { return }
+        networkDataFetcher.fetch(userId: userId, pathId: folderId, whois: whois, parameters : [:])
         { (folderResponse) in
             guard folderResponse != nil else { return }
             let responseString = String(decoding: folderResponse!, as: UTF8.self)
@@ -141,11 +142,12 @@ final class HomeInteractor : PresenterToHomeInteractorProtocol{
         }
     }
     
-    func createFolderRequest(folderId : String, newFolderName : String) {
+    func createFolderRequest(folderId : String?, newFolderName : String?) {
         
-        let url = "https://romansuvorov.ru/clouddefender/folders/"
+        let whois = "createFolder"
+        guard let folderId = folderId, let newFolderName = newFolderName else { return }
         let parameters : [String: Any] = [ "parentFolderId" : "\(folderId)", "newFolderName" : "\(newFolderName)"]
-        self.networkDataFetcher.fetch(urlString: url, userId: userId!, httpMethod: "POST", parameters : parameters)
+        networkDataFetcher.fetch(userId: userId!, pathId: "", whois: whois, parameters : parameters)
         { (folderResponse) in
             guard folderResponse != nil else { return }
             let responseString = String(decoding: folderResponse!, as: UTF8.self)
@@ -153,18 +155,19 @@ final class HomeInteractor : PresenterToHomeInteractorProtocol{
             let b = a.dropFirst()
             if b.count == 36{
                 self.presenter?.successAlert(successMessage: "Папка \(newFolderName) создана!", whois: "createFolder")
-                self.folderResponse?.folder.folders.append(Folders(folderId: "\(b)", folderName: "\(newFolderName)"))
+                self.folderResponse?.folder?.folders?.append(Folders(folderId: "\(b)", folderName: "\(newFolderName)"))
             }else{
                 self.presenter?.errorAlert(errorMessage: "Ошибка: \(responseString)")
             }
         }
     }
     
-    func shareFolderRequest(folderId : String, folderName : String, userName : String, userEmail : String, accessLevel : Int) {
+    func shareFolderRequest(folderId : String?, folderName : String?, userName : String?, userEmail : String?, accessLevel : Int?) {
         
-        let url = "https://romansuvorov.ru/clouddefender/folders/"
-        let parameters : [String: Any] = [ "folderId" : "\(folderId)", "userName" : "\(userName)", "email" : "\(userEmail)", "accessLevel" : accessLevel]
-        self.networkDataFetcher.fetch(urlString: url, userId: userId!, httpMethod: "PATCH", parameters : parameters) { (folderResponse) in
+        let whois = "shareFolder"
+        guard let folderId = folderId, let folderName = folderName, let userName = userName, let userEmail = userEmail else { return }
+        let parameters : [String: Any] = [ "folderId" : "\(folderId)", "userName" : "\(userName)", "email" : "\(userEmail)", "accessLevel" : accessLevel!]
+        networkDataFetcher.fetch(userId: userId!, pathId: "", whois: whois, parameters : parameters) { (folderResponse) in
             guard folderResponse != nil else { return }
             let responseString = String(decoding: folderResponse!, as: UTF8.self)
             if responseString == ""{
@@ -175,10 +178,12 @@ final class HomeInteractor : PresenterToHomeInteractorProtocol{
         }
     }
     
-    func downloadFileRequest(fileId : String, fileName : String){
-        let nameType = checkFileType(fileName : fileName).0
-        let url = "https://romansuvorov.ru/clouddefender/files/\(fileId)"
-        self.networkDataFetcher.fetch(urlString: url, userId: userId!, httpMethod: "GET", parameters: [:]) { (file) in
+    func downloadFileRequest(fileId : String?, fileName : String?){
+        
+        let nameType = checkFileType(fileName : fileName!).0
+        let whois = "downloadFile"
+        guard let fileId = fileId, let userId = userId, let fileName = fileName else { return }
+        networkDataFetcher.fetch(userId: userId, pathId: fileId, whois: whois, parameters: [:]) { (file) in
             guard file != nil else {
                 let responseString = String(decoding: file!, as: UTF8.self)
                 self.presenter?.errorAlert(errorMessage: "Ошибка: \(responseString)")
@@ -202,23 +207,24 @@ final class HomeInteractor : PresenterToHomeInteractorProtocol{
         }
     }
     
-    func deleteFileRequest(fileId : String, fileName : String){
+    func deleteFileRequest(fileId : String?, fileName : String?){
         
-        let url = "https://romansuvorov.ru/clouddefender/files/\(fileId)"
-        self.networkDataFetcher.fetch(urlString: url, userId: userId!, httpMethod: "DELETE", parameters: [:]) { (file) in
+        let whois = "deleteFile"
+        guard let fileId = fileId, let userId = userId else { return }
+        networkDataFetcher.fetch(userId: userId, pathId: fileId, whois: whois, parameters: [:]) { (file) in
             guard file != nil else { return }
             let responseString = String(decoding: file!, as: UTF8.self)
             if responseString == ""{
-                self.presenter?.successAlert(successMessage: "Файл \(fileName) удален!", whois: "deleteFile")
+                self.presenter?.successAlert(successMessage: "Файл \(fileName!) удален!", whois: "deleteFile")
             }else{
                 self.presenter?.errorAlert(errorMessage: "Ошибка: \(responseString)")
             }
         }
     }
     
-    func uploadFileRequest(folderId : String, file : Data, fileName : String, fileType: String){
+    func uploadFileRequest(folderId : String?, file : Data?, fileName : String?, fileType: String?){
         
-        let url = "https://romansuvorov.ru/clouddefender/files/"
+        guard let folderId = folderId, let file = file, let fileName = fileName, let fileType = fileType, let userId = userId else { return }
         let memeType = checkMimeType(filetype : fileType)
         let parameters = [
             [
@@ -231,23 +237,23 @@ final class HomeInteractor : PresenterToHomeInteractorProtocol{
                 "value": "\(folderId)",
                 "type": "text"
             ]]
-        self.networkDataFetcher.fetchUploadFile(urlString: url, userId: userId!, fileName: "\(fileName)", httpMethod: "POST", mime: memeType, data: file, parameters: parameters) { (response) in
+        networkDataFetcher.fetchUploadFile(userId: userId, fileName: fileName, mime: memeType, data: file, parameters: parameters) { (response) in
             guard response != nil else { return }
             let responseString = String(decoding: response!, as: UTF8.self)
             let a = responseString.dropLast()
             let b = a.dropFirst()
             if b.count == 36{
                 self.presenter?.successAlert(successMessage: "Файл \(fileName)) загружен в CloudDefender!", whois: "uploadFile")
-                self.folderResponse?.folder.files.append(Files(fileId: "\(b)", fileName: "\(fileName)"))
+                self.folderResponse?.folder?.files?.append(Files(fileId: "\(b)", fileName: "\(fileName)"))
             }else{
                 self.presenter?.errorAlert(errorMessage: "Ошибка: \(responseString)")
             }
         }
     }
     
-    func updateFileRequest(folderId : String, fileId : String, updatedfile : Data, fileName : String, fileType: String){
+    func updateFileRequest(folderId : String?, fileId : String?, updatedfile : Data?, fileName : String?, fileType: String?){
         
-        let url = "https://romansuvorov.ru/clouddefender/files/"
+        guard let folderId = folderId, let fileId = fileId, let updatedfile = updatedfile, let fileName = fileName, let fileType = fileType, let userId = userId else { return }
         let memeType = checkMimeType(filetype : fileType)
         let parameters = [
             [
@@ -265,7 +271,7 @@ final class HomeInteractor : PresenterToHomeInteractorProtocol{
                 "value": "\(fileId)",
                 "type": "text"
             ]]
-        self.networkDataFetcher.fetchUploadFile(urlString: url, userId: userId!, fileName: "\(fileName)", httpMethod: "PUT", mime: memeType, data: updatedfile, parameters: parameters) { (response) in
+        networkDataFetcher.fetchUploadFile(userId: userId, fileName: fileName, mime: memeType, data: updatedfile, parameters: parameters) { (response) in
             guard response != nil else { return }
             let responseString = String(decoding: response!, as: UTF8.self)
             if responseString == ""{
@@ -276,7 +282,7 @@ final class HomeInteractor : PresenterToHomeInteractorProtocol{
         }
     }
     
-    func userExit(navigationController : UINavigationController) {
+    func userExit(navigationController : UINavigationController?) {
         
         coreData.deleteUser()
         presenter?.exitUser(navigationController: navigationController)
@@ -284,47 +290,46 @@ final class HomeInteractor : PresenterToHomeInteractorProtocol{
         UserDefaults.standard.removeObject(forKey: "lastFolderNameArray")
     }
     
-    func checkingFolderIndex(folderIndex : Int){
+    func checkingFolderIndex(folderIndex : Int?){
         
         guard let folderResponse = folderResponse else { return }
-        let folderId = folderResponse.folder.folders[folderIndex].folderId
+        let folderId = folderResponse.folder?.folders?[folderIndex!].folderId
         getFoldersRequest(folderId: folderId!, direction : "forward", userId: userId!)
     }
     
-    func checkingFileIndex(fileIndex: Int, navigationController : UINavigationController) {
+    func checkingFileIndex(fileIndex: Int?, navigationController : UINavigationController?) {
         
-        let fileName = folderResponse?.folder.files[fileIndex].fileName
-        let fileId = folderResponse?.folder.files[fileIndex].fileId
-        let url = "https://romansuvorov.ru/clouddefender/files/\(fileId!)"
-        let fileType = checkFileType(fileName: fileName!).1
-        self.networkDataFetcher.fetch(urlString: url, userId: userId!, httpMethod: "GET", parameters: [:]) { (file) in
+        guard let fileName = folderResponse?.folder?.files?[fileIndex!].fileName, let fileId = folderResponse?.folder?.files?[fileIndex!].fileId, let userId = userId else { return }
+        let fileType = checkFileType(fileName: fileName).1
+        let whois = "downloadFile"
+        
+        networkDataFetcher.fetch(userId: userId, pathId: fileId, whois: whois, parameters: [:]) { (file) in
             guard file != nil else {
                 let responseString = String(decoding: file!, as: UTF8.self)
                 self.presenter?.errorAlert(errorMessage: "Ошибка: \(responseString)")
                 return
             }
-            let pathURL = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask)[0].appendingPathComponent("\(fileName!)")
+            let pathURL = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask)[0].appendingPathComponent("\(fileName)")
             do {
                 try file!.write(to: pathURL, options: .atomic)
             }catch{
                 self.presenter?.errorAlert(errorMessage: "Ошибка при записи: \(error)")
             }
-            self.presenter?.goToFile(navigationController: navigationController, fileURL: pathURL, fileName: fileName!, fileType : fileType)
+            self.presenter?.goToFile(navigationController: navigationController, fileURL: pathURL, fileName: fileName, fileType : fileType)
         }
     }
     
-    func checkingFileName(folderIndex: Int) -> String{
+    private func checkingFileName(folderIndex: Int) -> String{
         
-        guard let folderResponse = folderResponse else { return "unknown"}
-        let fileName = folderResponse.folder.files[folderIndex].fileName
-        return fileName!
+        guard let folderResponse = folderResponse, let fileName = folderResponse.folder?.files?[folderIndex].fileName else { return "unknown"}
+        return fileName
     }
     
-    func checkMimeType(filetype : String) -> String{
+    private func checkMimeType(filetype : String) -> String{
         
         let mimeTypeTest = "\(filetype)"
         switch mimeTypeTest {
-        //image
+        // MARK: - Image
         case "png":
             return "image/png"
         case "heic":
@@ -343,7 +348,7 @@ final class HomeInteractor : PresenterToHomeInteractorProtocol{
             return "image/svg+xml"
         case "tif","tiff":
             return "image/tiff"
-        //document
+        // MARK: - Document
         case "pdf":
             return "application/pdf"
         case "doc","dot":
@@ -388,7 +393,7 @@ final class HomeInteractor : PresenterToHomeInteractorProtocol{
             return "application/vnd.ms-powerpoint.slideshow.macroEnabled.12"
         case "mdb":
             return "application/vnd.ms-access"
-        //video
+        // MARK: - Video
         case "webm":
             return "video/webm"
         case "mp2","mpa","mpe","mpeg","mpg","mpv2":
@@ -411,7 +416,7 @@ final class HomeInteractor : PresenterToHomeInteractorProtocol{
             return "video/x-msvideo"
         case "wmv":
             return "video/x-ms-wmv"
-        //audio
+        // MARK: - Audio
         case "wma":
             return "audio/x-ms-wma"
         case "mp3":
@@ -427,7 +432,7 @@ final class HomeInteractor : PresenterToHomeInteractorProtocol{
         }
     }
     
-    func checkFileType(fileName : String) -> (String, String){
+    private func checkFileType(fileName : String) -> (String, String){
         let imageType = ["png","heic","webp","bmp","gif","jpe","jpeg","jpg","svg","tif","tiff"]
         let documentType = ["pdf","doc","dot","docx","dotx","docm","dotm","xls","xlt","xla","xlsx","xltx","xltm","xlam","xlsb","ppt","pot","pps","ppa","pptx","potx","ppsx","ppam","pptm","potm","ppsm","mdb"]
         let videoType = ["webm","mp2","mpa","mpe","mpeg","mpg","mpv2","qt","mov","movie","flv","mp4","ts","3gp","3gpp","3gp2","3gpp2","avi","wmv"]

@@ -22,7 +22,7 @@ final class HomeAccessLevelAlertController: UIAlertController, UITableViewDataSo
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         controller = UITableViewController(style: .plain)
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-        controller.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        controller.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         controller.tableView.dataSource = self
         
         controller.tableView.addObserver(self, forKeyPath: "contentSize", options: [.initial, .new], context: nil)
@@ -46,36 +46,36 @@ final class HomeAccessLevelAlertController: UIAlertController, UITableViewDataSo
         return 4
     }
     
-    @objc func switchChangedCreate(mySwitch: UISwitch) {
+    @objc private func switchChangedCreate(mySwitch: UISwitch?) {
         
-        if mySwitch.isOn == true{
+        if mySwitch?.isOn == true{
             createValue = true
         }else{
             createValue = false
         }
     }
     
-    @objc func switchChangedRead(mySwitch: UISwitch) {
+    @objc private func switchChangedRead(mySwitch: UISwitch?) {
         
-        if mySwitch.isOn == true{
+        if mySwitch?.isOn == true{
             readValue = true
         }else{
             readValue = false
         }
     }
     
-    @objc func switchChangedDelete(mySwitch: UISwitch) {
+    @objc private func switchChangedDelete(mySwitch: UISwitch?) {
         
-        if mySwitch.isOn == true{
+        if mySwitch?.isOn == true{
             deleteValue = true
         }else{
             deleteValue = false
         }
     }
     
-    @objc func switchChangedOwner(mySwitch: UISwitch) {
+    @objc private func switchChangedOwner(mySwitch: UISwitch?) {
         
-        if mySwitch.isOn == true{
+        if mySwitch?.isOn == true{
             ownerValue = true
         }else{
             ownerValue = false
@@ -84,7 +84,7 @@ final class HomeAccessLevelAlertController: UIAlertController, UITableViewDataSo
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell")!
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")!
         
         createValue  = false
         readValue = false
@@ -92,7 +92,7 @@ final class HomeAccessLevelAlertController: UIAlertController, UITableViewDataSo
         ownerValue  = false
         SummLevel = 0
         
-        switch(indexPath.row) {
+        switch indexPath.row {
         case 0:
             cell.textLabel?.text = "Создание"
             let switchView = UISwitch(frame: CGRect.zero)

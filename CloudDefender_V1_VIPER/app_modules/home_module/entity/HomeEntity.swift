@@ -10,7 +10,7 @@ import Foundation
 
 final class Folder : Codable{
     
-    let folder : FolderList
+    let folder : FolderList?
 }
 
 final class FolderList : Codable {
@@ -18,9 +18,9 @@ final class FolderList : Codable {
     let fullPath : String?
     let folderName : String?
     let folderId : String?
-    var files : [Files]
-    var folders : [Folders]
-    let owners : [String]
+    var files : [Files]?
+    var folders : [Folders]?
+    let owners : [String]?
 }
 
 final class Files : Codable{

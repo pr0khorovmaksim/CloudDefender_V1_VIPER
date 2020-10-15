@@ -8,8 +8,8 @@
 
 import UIKit
 
-final class HomeCollectionViewCell: UICollectionViewCell {
+final class HomeCollectionViewCell : UICollectionViewCell {
     
-    @IBOutlet weak var folderNameLabel: UILabel!
-    @IBOutlet weak var folderImage: UIImageView!
+    @IBOutlet weak var folderNameLabel : UILabel!
+    @IBOutlet weak var folderImage : UIImageView!
 }

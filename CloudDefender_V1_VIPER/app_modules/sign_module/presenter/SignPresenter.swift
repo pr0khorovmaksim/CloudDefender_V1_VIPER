@@ -15,14 +15,14 @@ final class SignPresenter : ViewToSignPresenterProtocol{
     var router: PresenterToSignRouterProtocol?
     var interactor: PresenterToSignInteractorProtocol?
     
-    func SignIn(navigationController: UINavigationController){
+    func SignIn(navigationController: UINavigationController?){
         interactor?.oAuthSwift(navigationController: navigationController)
     }
 }
 
 extension SignPresenter : InteractorToSignPresenterProtocol{
     
-    func goToHome(navigationController: UINavigationController){
+    func goToHome(navigationController: UINavigationController?){
         router?.showHomeViewController(navigationController: navigationController)
     }
 }

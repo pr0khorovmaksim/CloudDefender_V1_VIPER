@@ -33,9 +33,9 @@ final class SignRouter : PresenterToSignRouterProtocol{
         return UIStoryboard(name: "Main", bundle: Bundle.main)
     }
     
-    func showHomeViewController(navigationController : UINavigationController) {
+    func showHomeViewController(navigationController : UINavigationController?) {
         
         let homeModule = HomeRouter.createHomeModule()
-        navigationController.pushViewController(homeModule, animated: true)
+        navigationController?.pushViewController(homeModule, animated: true)
     }
 }
